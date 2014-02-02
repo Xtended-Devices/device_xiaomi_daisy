@@ -126,7 +126,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 #FM
-BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # GPS
