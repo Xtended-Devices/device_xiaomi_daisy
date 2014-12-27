@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/daisy
 
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
