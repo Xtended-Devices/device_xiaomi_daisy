@@ -345,6 +345,7 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     libc2dcolorconvert \
     libmm-omxcore \
