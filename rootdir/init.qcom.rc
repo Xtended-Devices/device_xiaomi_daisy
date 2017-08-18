@@ -487,6 +487,12 @@ service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqba
     group root
     disabled
 
+service power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
 on charger
     setprop persist.sys.usb.config mass_storage
     start vendor.qcom-post-boot
