@@ -351,6 +351,9 @@ on post-fs-data
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
 
+    # Create /data/vendor/tzstorage directory for SFS listener
+    mkdir /data/vendor/tzstorage 0770 system system
+
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio
