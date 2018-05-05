@@ -203,6 +203,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.radio.multisim.config=dsds \
 persist.radio.VT_ENABLE=1 \
 persist.radio.volte.dan_support=true \
+persist.radio.aosp_usr_pref_sel=true \
 persist.sys.cust.lte_config=true \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
