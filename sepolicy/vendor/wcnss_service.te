@@ -5,3 +5,4 @@ allow wcnss_service serialno_prop:file r_file_perms;
 allow wcnss_service system_prop:file r_file_perms;
 allow wcnss_service vendor_default_prop:property_service set;
 allow wcnss_service wifi_data_file:dir search;
+dontaudit wcnss_service serialno_prop:file { r_file_perms };
