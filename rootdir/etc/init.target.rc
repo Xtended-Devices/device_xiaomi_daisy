@@ -130,14 +130,6 @@ on boot
     start rmt_storage
     insmod /system/lib/modules/adsprpc.ko
 
-    # Update cpusets on boot and we want better load balancing
-    write /dev/cpuset/audio-app/cpus "4-7"
-    write /dev/cpuset/background/cpus "4-7"
-    write /dev/cpuset/foreground/cpus "0-7"
-    write /dev/cpuset/restricted/cpus "4-7"
-    write /dev/cpuset/system-background/cpus "4-7"
-    write /dev/cpuset/top-app/cpus "0-7"
-
 # Add a cpuset for the camera daemon
 # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
