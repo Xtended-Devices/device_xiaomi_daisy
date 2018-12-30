@@ -124,10 +124,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Device-specific Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
