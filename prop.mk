@@ -240,6 +240,7 @@ persist.vendor.radio.add_power_save=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
+persist.vendor.radio.multisim_switch_support=true \
 persist.vendor.radio.sib16_support=1 \
 persist.vendor.data.iwlan.enable=true \
 persist.dbg.ims_volte_enable=1 \
