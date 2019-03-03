@@ -152,6 +152,10 @@ PRODUCT_PACKAGES_DEBUG += \
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.common@2.0 \
