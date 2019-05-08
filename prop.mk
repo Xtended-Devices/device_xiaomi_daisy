@@ -184,6 +184,7 @@ mm.enable.sec.smoothstreaming=true \
 vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.smoothstreaming=true \
 mmp.enable.3g2=true \
+media.stagefright.thumbnail.prefer_hw_codecs=true \
 vendor.audio.hw.aac.encoder=true \
 vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
