@@ -206,7 +206,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 # Sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # SurfaceFlinger
 TARGET_USE_QCOM_SURFACEFLINGER := true
