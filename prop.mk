@@ -255,9 +255,7 @@ debug.sf.earlyGl.app.duration=21000000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.timed.enable=true \
-persist.vendor.delta_time.enable=true \
-persist.delta_time.enable=true
+persist.vendor.delta_time.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
