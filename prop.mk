@@ -106,7 +106,6 @@ ro.launcher.blur.appLaunch=0
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.disable_client_composition_cache=1 \
-debug.hwui.renderer=opengl \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.auto_latch_unsignaled=true \
