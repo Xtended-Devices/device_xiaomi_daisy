@@ -203,7 +203,7 @@ TARGET_PREBUILT_RECOVERY_RAMDISK := $(DEVICE_PATH)/prebuilts/ramdisk-recovery.cp
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
