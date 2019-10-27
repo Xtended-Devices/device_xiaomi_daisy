@@ -547,6 +547,9 @@
     <bool name="config_smartChargingAvailable">true</bool>
     <bool name="config_deviceSupportSmartCharging">true</bool>
 
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
+
     <!-- Overlays for SystemInfo -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone4/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
