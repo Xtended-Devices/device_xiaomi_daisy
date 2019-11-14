@@ -624,3 +624,6 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
+
+on property:apexd.status=ready
+    symlink /system/lib64/libashmemd_client.so /system/apex/com.android.media.swcodec/lib64/libashmemd_client.so
