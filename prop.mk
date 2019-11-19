@@ -177,9 +177,7 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1 \
-vendor.gralloc.enable_fb_ubwc=1 \
-vendor.video.disable.ubwc=1
+vendor.gralloc.enable_fb_ubwc=1
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
