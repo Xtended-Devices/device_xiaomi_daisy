@@ -618,6 +618,8 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     # and its .rc file has an "onrestart restart audio-hal" rule, thus
     # an additional auto-restart from the init process isn't needed.
     oneshot
+    interface android.hardware.audio@6.0::IDevicesFactory default
+    interface android.hardware.audio@5.0::IDevicesFactory default
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
     onrestart restart audioserver
