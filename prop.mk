@@ -159,7 +159,10 @@ ro.lmk.thrashing_limit=100 \
 ro.lmk.thrashing_limit_decay=10 \
 ro.lmk.swap_util_max=100 \
 ro.lmk.swap_free_low_percentage=20 \
-ro.lmk.debug=false
+ro.lmk.debug=false \
+ro.lmk.kill_heaviest_task=true \
+ro.lmk.kill_timeout_ms=100 \
+ro.lmk.use_minfree_levels=true
 
 # Live Blur
 PRODUCT_PRODUCT_PROPERTIES += \
