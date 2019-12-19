@@ -105,7 +105,16 @@ void load_dalvik_properties() {
 }
 
 void vendor_load_properties() {
+    std::string fingerprint;
+    std::string description;
 
+    fingerprint = "google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/release-keys";
+    description = "marlin-user 10 QP1A.191005.007.A3 5972272 release-keys";
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    property_override("ro.build.description", description.c_str());
+
+    load_dalvik_properties();
     workaround_properties();
 
     // Misc
