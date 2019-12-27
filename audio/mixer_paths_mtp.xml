@@ -1217,7 +1217,7 @@
     </path>
 
     <path name="hph-lowpower-mode">
-        <ctl name="RX HPH Mode" value="CLS_H_LOHIFI" />
+        <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
     </path>
 
     <path name="headset-mic">
