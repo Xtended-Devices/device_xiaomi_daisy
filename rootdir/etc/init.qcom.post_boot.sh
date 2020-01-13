@@ -1902,9 +1902,15 @@ case "$target" in
             echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
             echo 633600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
+            # cpuset parameters
+            echo 1-2 > /dev/cpuset/audio-app/cpus
+            echo 0-1 > /dev/cpuset/background/cpus
+            echo 0-7 > /dev/cpuset/camera-daemon/cpus
+            echo 0-3,5-6 > /dev/cpuset/foreground/cpus
+            echo 0-3 > /dev/cpuset/restricted/cpus
             echo 0-3 > /dev/cpuset/system-background/cpus
+            echo 0-7 > /dev/cpuset/top-app/cpus
+
             # choose idle CPU for top app tasks
             echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
