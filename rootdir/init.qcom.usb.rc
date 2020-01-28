@@ -46,7 +46,7 @@ on charger
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     enable vendor.qcom-usb-sh
     start vendor.qcom-usb-sh
-    setprop sys.usb.config mass_storage
+    setprop sys.usb.config mtp
 
 on boot
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
