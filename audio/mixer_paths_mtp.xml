@@ -1386,6 +1386,10 @@
         <path name="headset-mic" />
     </path>
 
+    <path name="voice-headset">
+        <path name="headphones" />
+    </path>
+
     <path name="speaker-and-headphones">
         <path name="speaker" />
         <ctl name="MI2S_RX Channels" value="Two" />
