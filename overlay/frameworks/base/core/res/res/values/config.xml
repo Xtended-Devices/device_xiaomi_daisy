@@ -543,6 +543,10 @@
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
 
+    <!-- Smart Charging is available. -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <bool name="config_deviceSupportSmartCharging">true</bool>
+
     <!-- Overlays for SystemInfo -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone4/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
