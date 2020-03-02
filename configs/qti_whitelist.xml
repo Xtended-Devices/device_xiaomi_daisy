@@ -37,6 +37,8 @@
     <allow-in-power-save package="com.qualcomm.qcrilmsgtunnel" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
+    <allow-in-power-save package="com.lsdroid.cerberus" />
+    <allow-in-power-save package="com.lsdroid.cerberuss" />
 
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
