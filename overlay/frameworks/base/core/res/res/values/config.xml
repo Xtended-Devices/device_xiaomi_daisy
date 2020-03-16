@@ -521,6 +521,9 @@
     <!-- Whether device supports wifi ap mac randomization -->
     <bool name="config_wifi_ap_randomization_supported">true</bool>
 
+    <!-- True if the firmware supports p2p MAC randomization -->
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
+
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
 
