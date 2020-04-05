@@ -24,5 +24,7 @@
     <!-- Hint text for DNS -->
     <string name="wifi_dns2_hint" translatable="false">1.1.1.1</string>
 
+    <string name="keyguard_indication_charging_time_fast"><xliff:g id="percentage">%2$s</xliff:g> • Turbo Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+
 </resources>
 
