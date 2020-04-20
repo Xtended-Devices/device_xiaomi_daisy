@@ -81,6 +81,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
 persist.vendor.dpm.feature=0
 
+# Charger
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.charger.enable_suspend=true
+
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
