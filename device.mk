@@ -224,7 +224,9 @@ PRODUCT_PACKAGES += \
     libvulkan \
     liboverlay \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9_vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
