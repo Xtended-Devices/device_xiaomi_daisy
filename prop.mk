@@ -162,6 +162,10 @@ ro.fm.transmitter=false
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ril.def.agps.mode=1
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
