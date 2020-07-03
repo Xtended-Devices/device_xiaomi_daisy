@@ -794,11 +794,12 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|2396c3cb39d76bd60b375195a9a08ca94659d60a
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|b08f0d2e92e0adce42127b5f978fa6bb22326ce1
 
-# Thermal
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from Onclite PKQ1.181021.001/V10.2.5.0.PFLCNXM
+vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
+-vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
+-vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
+vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
+vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
 
 # Time services - from LA.UM.8.6.2.r1-06600-89xx.0
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
