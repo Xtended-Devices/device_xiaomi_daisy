@@ -280,8 +280,8 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|34206c519a4ccd08545921d68
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|b5b39c4f3aedc09bced70f0348980e3eccd71fca
 
 # Gatekeeper - from LA.UM.8.6.2.r1-06600-89xx.0
-vendor/lib/hw/gatekeeper.msm8953.so|c153dbbd2c31ccee8633837961ce79909257af04
-vendor/lib64/hw/gatekeeper.msm8953.so|2982026cfb7911d279bd4c9be3a02ad21cdb54ec
+vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
+vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # GPS - from LA.UM.8.6.2.r1-07600-89xx.0
 vendor/bin/garden_app|666cbf8b4dcc31b84aa62d374fc3f662f5347a71
@@ -340,7 +340,7 @@ vendor/lib/egl/libGLESv1_CM_adreno.so|e5bdebe27271194b315fef65bbc490e4144dd272
 vendor/lib/egl/libGLESv2_adreno.so|b4fa31b2eaffab50df8156486a0cdb14f3bfffbf
 vendor/lib/egl/libQTapGLES.so|cdff3ea4c0dc71dd9c558ea2affae95b5fb75b04
 vendor/lib/egl/libq3dtools_adreno.so|b970511e8c02f60fad60ee66a4adefcd3e25c6d7
-vendor/lib/hw/vulkan.msm8953.so|3ef65f298981f2edcec7e6fab91f2c44b1116cab
+vendor/lib/hw/vulkan.msm8953.so|55c875334793eb80e0d7177f640df1930dbe46a5
 vendor/lib/libC2D2.so|e85a06abb140e40b88b119a53f62a96c584a4233
 vendor/lib/libCB.so|e9f6737be8ecc8cf0f035c13754f2b0c833df26b
 vendor/lib/libOpenCL.so|90dd47a0a0bdcd5632e437d0c66a4e9aed9aa419
@@ -361,7 +361,7 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so|ee3604131af93e38baaf0cdff49523514cd1f1b2
 vendor/lib64/egl/libGLESv2_adreno.so|db5a2593aee8d6e588fc77e5d69b22d56c919a0a
 vendor/lib64/egl/libQTapGLES.so|05200db46341826aa9650004f898e1156746d753
 vendor/lib64/egl/libq3dtools_adreno.so|07c3b406aa055abfdb3358833d02cb5133964d37
-vendor/lib64/hw/vulkan.msm8953.so|264f8e9d39e82ef74a53f970f639f01f311fa485
+vendor/lib64/hw/vulkan.msm8953.so|acb63c9b1827f7cbae1ee9946a9c3afde4ec18f7
 vendor/lib64/libC2D2.so|802802ac7ce0bb8bfc6918449a89ec820c6cfd53
 vendor/lib64/libCB.so|336f122d0b2eb287f8634637876427b52dcc12ab
 vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
@@ -413,8 +413,8 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so|7fdc8d9219a6d7a335fc91edb4837bccbac9
 vendor/bin/ipacm-diag
 
 # Keystore - from LA.UM.8.6.2.r1-06600-89xx.0
-vendor/lib/hw/keystore.msm8953.so|9be4c88926ebed98b2b23725f8118ff9d0bbb2d6
-vendor/lib64/hw/keystore.msm8953.so|9f4d991dfa359299739bd443b63731528d9cb5d0
+vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
+vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
 # Latency - from LA.UM.8.6.2.r1-07600-89xx.0
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
