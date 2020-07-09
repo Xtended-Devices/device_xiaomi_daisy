@@ -1,2 +1,7 @@
 allow vold proc_touchpanel:dir r_dir_perms;
+allow vold blkid_untrusted:process noatsecure;
+allow vold fsck_untrusted:process noatsecure;
+allow vold sgdisk:process noatsecure;
+allow vold sdcardd:process noatsecure;
+allow vold vold_prepare_subdirs:process noatsecure;
 allow vold same_process_hal_file:file { execute getattr open read };

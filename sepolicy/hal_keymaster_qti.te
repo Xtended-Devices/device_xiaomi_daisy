@@ -1,1 +1,7 @@
 allow hal_keymaster_qti same_process_hal_file:file  { execute getattr open read };
+allow hal_keymaster_qti system_file:file rx_file_perms;
+allow hal_keymaster_qti system_file:file { open read };
+allow hal_keymaster_qti theme_prop:file { read };
+allow hal_keymaster_qti system_file:file { getattr };
+allow hal_keymaster_qti theme_prop:file { read };
+allow hal_keymaster_qti system_file:file { execute };

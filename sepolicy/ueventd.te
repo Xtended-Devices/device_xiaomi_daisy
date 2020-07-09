@@ -3,6 +3,9 @@ typeattribute ueventd data_between_core_and_vendor_violators;
 allow ueventd fpc_sysfs:file rw_file_perms;
 r_dir_file(ueventd, wifi_vendor_data_file)
 
+allow ueventd wifi_vendor_data_file:dir search;
+allow ueventd wifi_vendor_data_file:file { getattr open read };
+
 allow ueventd debugfs:dir { open read relabelfrom };
 allow ueventd debugfs:file getattr;
 allow ueventd debugfs_wakeup_sources:file getattr;
@@ -11,5 +14,5 @@ r_dir_file(ueventd, vfat)
 allow ueventd vfat:dir { search };
 allow ueventd vfat:file { read };
 allow ueventd vfat:file { open };
-allow ueventd vfat:file { getattr };
-allow ueventd ueventd:capability { sys_admin };
+allow ueventd vfat:file { getattr open read };
+allow ueventd ueventd:capability { sys_admin kill };

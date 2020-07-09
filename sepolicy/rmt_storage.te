@@ -4,3 +4,5 @@ userdebug_or_eng(`
   allow rmt_storage debugfs_rmt:file rw_file_perms;
 ')
 allow rmt_storage rmt_storage:capability { sys_admin };
+allow rmt_storage block_device:blk_file { open read write };
+allow rmt_storage sysfs:file { open read };
