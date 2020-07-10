@@ -27,7 +27,6 @@
 #define BTIF_HF_WBS_PREFERRED TRUE
 
 // skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED TRUE
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
 #define BTM_WBS_INCLUDED TRUE
