@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,9 +26,6 @@
 
 // Wide-band speech support
 #define BTIF_HF_WBS_PREFERRED TRUE
-
-// skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
 
 /* Disable enhanced sco commands */
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
