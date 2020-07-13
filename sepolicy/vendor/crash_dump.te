@@ -1,0 +1,15 @@
+allow crash_dump qcom_ims_prop:file { open getattr };
+allow crash_dump crash_dump:capability { sys_admin };
+allow crash_dump theme_prop:file { open };
+allow crash_dump theme_prop:file { getattr };
+allow crash_dump device_config_runtime_native_prop:file { open };
+allow crash_dump device_config_runtime_native_prop:file { getattr };
+allow crash_dump vendor_overlay_file:file { read };
+allow crash_dump vendor_overlay_file:file { open };
+allow crash_dump vendor_overlay_file:file { getattr };
+allow crash_dump resourcecache_data_file:file { read open getattr };
+allow crash_dump vendor_mpctl_prop:file { open getattr };
+allow crash_dump device_config_runtime_native_boot_prop:file { open getattr };
+allow crash_dump runtime_event_log_tags_file:file { getattr };
+allow crash_dump vendor_tee_listener_prop:file { open getattr };
+allow crash_dump hwservicemanager_prop:file { open getattr };

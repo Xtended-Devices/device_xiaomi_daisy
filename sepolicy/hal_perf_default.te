@@ -1,2 +1,0 @@
-allow hal_perf_default hal_perf_default:capability { sys_admin };
-allow hal_perf_default sysfs:dir { open read };

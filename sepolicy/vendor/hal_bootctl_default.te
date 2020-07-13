@@ -1,0 +1,4 @@
+allow hal_bootctl_default custom_ab_block_device:blk_file { getattr ioctl open read write };
+allow hal_bootctl_default block_device:blk_file { getattr ioctl open read write };
+allow hal_bootctl_default persist_block_device:blk_file { getattr ioctl open read write };
+allow hal_bootctl_default hal_bootctl_default:capability { sys_admin };

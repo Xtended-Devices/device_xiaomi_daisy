@@ -1,0 +1,7 @@
+allow mediaprovider bootloader_boot_reason_prop:file read;
+allow mediaprovider runtime_event_log_tags_file:file read;
+allow mediaprovider bluetooth_prop:file read;
+allow mediaprovider boottime_prop:file read;
+allow mediaprovider shell_data_file:dir { getattr };
+allow mediaprovider app_data_file:dir { search };
+allow mediaprovider mnt_media_rw_file:dir { getattr };

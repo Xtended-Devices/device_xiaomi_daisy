@@ -1,0 +1,4 @@
+allow dpmd dpmd:capability { sys_admin };
+allow dpmd vendor_file:file { read open getattr execute };
+allow dpmd ctl_stop_prop:property_service { set };
+allow dpmd diag_device:chr_file { read write };

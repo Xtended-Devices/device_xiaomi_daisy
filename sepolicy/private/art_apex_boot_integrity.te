@@ -1,0 +1,1 @@
+allow art_apex_boot_integrity art_apex_boot_integrity:capability { sys_admin };

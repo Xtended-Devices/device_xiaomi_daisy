@@ -1,0 +1,1 @@
+allow adbroot adbroot:capability { sys_admin };
