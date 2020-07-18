@@ -268,3 +268,9 @@ persist.vendor.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.com.google.ime.corner_key_r=35 \
+ro.com.google.ime.kb_pad_port_b=1
+
