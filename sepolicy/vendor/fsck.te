@@ -5,3 +5,4 @@ allow fsck fsck:capability { sys_admin };
 allow fsck mnt_vendor_file:dir { search getattr };
 allow fsck cache_block_device:blk_file { getattr read write };
 allow fsck userdata_block_device:blk_file { getattr read write };
+allow fsck custom_ab_block_device:blk_file { getattr read write };

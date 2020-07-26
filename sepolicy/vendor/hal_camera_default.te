@@ -23,3 +23,6 @@ allow hal_camera_default default_prop:property_service { set };
 allow hal_camera_default sysfs:file { read open getattr };
 allow hal_camera_default default_prop:file { read open getattr map };
 allow hal_camera_default sysfs_kgsl:dir { search };
+allow hal_camera_default bg_boot_complete_prop:file { read open getattr };
+allow hal_camera_default bg_daemon_prop:file { read open getattr };
+allow hal_camera_default bluetooth_prop:file { read open getattr };

@@ -58,3 +58,5 @@ allow platform_app wifi_prop:file { getattr open read };
 allow platform_app bg_daemon_prop:file { getattr open read };
 allow platform_app bpf_progs_loaded_prop:file { getattr open read };
 allow platform_app vendor_system_prop:file { getattr read open };
+allow platform_app sensors_panel_prop:file { getattr read open };
+allow platform_app sysfs_graphics:dir { search };
