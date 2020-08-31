@@ -105,7 +105,13 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.READ_BLOCKED_NUMBERS" />
         <permission name="android.permission.VIBRATE" />
     </privapp-permissions>
+    
     <privapp-permissions package="com.google.android.GoogleCamera">
         <permission name="android.permission.BIND_WALLPAPER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
     </privapp-permissions>
 </permissions>
