@@ -124,10 +124,4 @@ void vendor_load_properties()
 
     property_override("ro.oem_unlock_supported", "0");
     
-    // Pixel identification
-    property_override("ro.build.description","coral-user 11 RP1A.200720.009 6720564 release-keys");
-    property_override("ro.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
-    property_override("ro.system.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
-    property_override("ro.bootimage.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
-    property_override("ro.vendor.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
 }
