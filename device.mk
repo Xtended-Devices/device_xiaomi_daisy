@@ -452,6 +452,9 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 # VNDK
 PRODUCT_PACKAGES += \
     vndk-sp
+    
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderthreadstate.so
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
