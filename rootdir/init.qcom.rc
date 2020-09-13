@@ -428,7 +428,7 @@ on property:vendor.radio.atfwd.start=false
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
     restart vendor.camera-provider-2-4
-    restart vendor.audio-hal-2-0
+    restart vendor.audio-hal
     start wcnss-service
 
 on property:persist.env.fastdorm.enabled=true
@@ -605,7 +605,7 @@ service vendor.move_time_data /system/bin/move_time_data.sh
     disabled
     oneshot
 
-service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
     user audioserver
@@ -620,6 +620,7 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     oneshot
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
+    onrestart restart audioserver
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
