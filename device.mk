@@ -161,6 +161,12 @@ PRODUCT_PACKAGES_DEBUG += \
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor \
+    libhidltransport
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
