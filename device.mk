@@ -182,7 +182,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.postproc@1.0 \
-    Snap
+    Snap \
+    libdng_sdk.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
