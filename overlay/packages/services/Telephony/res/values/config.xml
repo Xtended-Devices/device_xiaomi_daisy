@@ -22,17 +22,25 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- Determine whether we should show the "listen for instructions" screen after
-         successfully placing the OTA call -->
-    <integer name="OtaShowListeningScreen">1</integer>
+    <!-- Allow handover from telephony calls to another ConnectionService. -->
+    <bool name="config_support_handover_from">true</bool>
 
-    <!-- If this is true, the SIM card (through Customer Service Profile EF file) will be
-         able to prevent manual operator selection. If false, this SIM setting will be
-         ignored and manual operator selection will always be available. See
-         CPHS4_2.WW6, CPHS B.4.7.1 for more information -->
-    <!-- DEPRECATED: Use CarrierConfigManager#KEY_CSP_ENABLED_BOOL -->
-    <bool name="csp_enabled">true</bool>
+    <!-- Flag indicating whether the device supports RTT (real-time text) -->
+    <bool name="config_support_rtt">true</bool>
 
-    <!-- After a CDMA conference call is merged, the swap button should be displayed. -->
-    <bool name="support_swap_after_merge" translatable="false">false</bool>
+    <!-- String indicating the package name of the device ImsService implementation for MMTEL. -->
+    <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
+
+    <!-- String indicating the package name of the device ImsService implementation for RCS. -->
+    <string name="config_ims_rcs_package" translatable="false">com.android.service.ims</string>
+
+    <!-- This device supports the AudioManager Telephony audio device and output onto this
+         device using {@link AudioDeviceInfo#TYPE_TELEPHONY}.
+         This is used to support carriers which generate a recording tone to the remote party
+         when a call recording app is in use. -->
+    <bool name="config_support_telephony_audio_device">true</bool>
+
+    <!-- This device requires that emergency calls are placed over the default data SIM when
+         possible because GNSS SUPL can only be received from the network on data subscription. -->
+    <bool name="config_gnss_supl_requires_default_data_for_emergency">true</bool>
 </resources>
