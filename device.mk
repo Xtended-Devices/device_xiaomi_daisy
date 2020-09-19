@@ -377,7 +377,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjson.vendor
 
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
