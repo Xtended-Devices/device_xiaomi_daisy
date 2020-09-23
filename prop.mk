@@ -85,6 +85,10 @@ persist.vendor.dpm.feature=0
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.charger.enable_suspend=true
 
+# EBPF
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=true
+
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
