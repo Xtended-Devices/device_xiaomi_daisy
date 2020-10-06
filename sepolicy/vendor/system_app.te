@@ -29,6 +29,10 @@ allow system_app camera_prop:property_service set;
 get_prop(system_app, camera_prop);
 allow system_app apexd:binder { call };
 allow system_app wificond:binder { call };
+
+# fm_radio app needes  open read write on fm_radio_device
+allow system_app fm_radio_device:chr_file r_file_perms;
+
 allow system_app hal_power_stats_default:binder { call };
 allow system_app sysfs_vibrator:file { read write rw_file_perms open getattr };
 allow system_app sysfs_vibrator:dir { search r_dir_perms };
