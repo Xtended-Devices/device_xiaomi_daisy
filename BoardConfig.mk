@@ -161,6 +161,10 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/daisy
 TARGET_KERNEL_CONFIG := sleepy_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
+# Clang Version
+TARGET_KERNEL_CLANG_VERSION := proton
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
