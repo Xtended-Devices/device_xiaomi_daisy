@@ -51,3 +51,5 @@ allow system_server adsprpc_prop:file { getattr open read };
 allow system_server apexd_prop:file { getattr open read };
 allow system_server bg_boot_complete_prop:file { getattr open read };
 allow system_server bg_daemon_prop:file { getattr open read };
+
+add_service(system_server, default_android_service);
