@@ -413,6 +413,12 @@ PRODUCT_PACKAGES += \
     init.camera.rc \
     init.camera.sh
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
