@@ -1,3 +1,4 @@
 allow vendor_per_mgr sysfs:file { open read };
 allow vendor_per_mgr vfat:file { open read };
+allow vendor_per_mgr vfat:dir { search };
 allow vendor_per_mgr vendor_per_mgr:capability { net_raw };
