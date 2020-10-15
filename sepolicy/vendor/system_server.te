@@ -36,6 +36,7 @@ allow system_server vendor_file:file { getattr open read };
 
 allow system_server adb_data_file:file { getattr open read };
 allow system_server zygote:process { getpgid };
+allow system_server app_zygote:process { getpgid };
 allow system_server vfat:dir { getattr open read };
 allow system_server shell_prop:property_service { set };
 allow system_server crash_dump:process { getpgid };
@@ -51,5 +52,6 @@ allow system_server adsprpc_prop:file { getattr open read };
 allow system_server apexd_prop:file { getattr open read };
 allow system_server bg_boot_complete_prop:file { getattr open read };
 allow system_server bg_daemon_prop:file { getattr open read };
+allow system_server media_rw_data_file:dir { setattr };
 
 add_service(system_server, default_android_service);
