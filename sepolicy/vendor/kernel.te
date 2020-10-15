@@ -6,3 +6,4 @@ allow kernel vfat:file open;
 allow kernel self:capability { dac_override kill };
 allow kernel kernel:capability { kill };
 allow kernel kernel:socket { create };
+allow kernel vfat:dir { search };
