@@ -39,7 +39,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
-    com.dsi.ant.antradio_library \
+    antradio_app \
     libantradio
 
 # Audio
@@ -168,7 +168,9 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbt-vendor
+    libbluetooth_qti \
+    libbt-logClient.so \
+    libbtconfigstore
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -357,6 +359,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI Common
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -455,10 +461,6 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
     
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderthreadstate.so
-
-# Verity
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \

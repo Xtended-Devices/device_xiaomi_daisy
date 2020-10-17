@@ -27,12 +27,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Syberia stuff.
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := aosp_daisy
+PRODUCT_NAME := syberia_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -43,3 +43,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+SYBERIA_BUILD_TYPE := UNOFFICIAL
