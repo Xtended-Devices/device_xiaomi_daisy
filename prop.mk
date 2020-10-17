@@ -92,7 +92,7 @@ debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
-debug.sf.latch_unsignaled=1 \
+debug.sf.latch_unsignaled=0 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
@@ -232,7 +232,10 @@ persist.vendor.cne.logging.qxdm=3974
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+ro.surface_flinger.max_virtual_display_dimension=4096
 
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.early_phase_offset_ns=1500000 \
