@@ -133,3 +133,4 @@ allow untrusted_app_27 cpucore_prop:file { open read getattr };
 allow untrusted_app_27 ctl_adbd_prop:file { open read getattr };
 allow untrusted_app_27 ctl_fm_prop:file { open read getattr };
 allow untrusted_app_27 vendor_system_prop:file { open read getattr };
+allow untrusted_app_27 exported_camera_prop:file { read };
