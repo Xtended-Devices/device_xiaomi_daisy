@@ -374,6 +374,9 @@ on post-fs-data
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
     write /sys/block/dm-2/queue/read_ahead_kb 2048
+ 
+    # Thermal Profile
+    write /sys/class/thermal/thermal_message/sconfig 0
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
