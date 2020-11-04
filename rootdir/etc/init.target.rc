@@ -149,6 +149,9 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
 
+    # Disable serial console
+    setprop init.svc.console stopped
+
     # DT2W Node
     chown system system /proc/touchpanel/wakeup_gesture
     chmod 0660 /proc/touchpanel/wakeup_gesture
