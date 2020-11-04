@@ -12,3 +12,4 @@ allow zygote same_process_hal_file:file { execute read open getattr map };
 allow zygote vendor_system_prop:file { read open getattr };
 allow zygote device:file { open write };
 allow zygote exported_camera_prop:file { read open getattr };
+allow zygote system_file:dir { write };
