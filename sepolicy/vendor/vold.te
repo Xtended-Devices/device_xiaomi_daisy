@@ -5,3 +5,4 @@ allow vold sgdisk:process noatsecure;
 allow vold sdcardd:process noatsecure;
 allow vold vold_prepare_subdirs:process noatsecure;
 allow vold same_process_hal_file:file { execute getattr open read };
+allow vold sysfs_mmc_host:file { write };
