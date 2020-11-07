@@ -20,7 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some VendorExtra stuff.
 $(call inherit-product-if-exists, vendor/ExclusivePack/config.mk)
-#$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
+# Inherit from MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 #
 # All components inherited here go to system_ext image
