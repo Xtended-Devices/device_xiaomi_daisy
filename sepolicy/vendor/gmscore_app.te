@@ -1,1 +1,2 @@
 allow gmscore_app linkerconfig_file:dir { getattr };
+allow gmscore_app vendor_file:file { read open };
