@@ -67,3 +67,4 @@ allow system_app bg_boot_complete_prop:file { open getattr read };
 allow system_app bg_daemon_prop:file { open getattr read };
 allow system_app system_suspend_control_service:service_manager { find };
 allow system_app vendor_system_prop:file { open getattr read };
+allow system_app vendor_file:file { read };
