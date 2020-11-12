@@ -164,12 +164,13 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
-    property_override("ro.product.model", "Mi A2 Lite");
-    property_override("ro.build.product", "daisy");
-    property_override("ro.product.device", "daisy");
-
-    property_override("ro.oem_unlock_supported", "0");
-
+    // Magisk Hide
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.build.type", "user");
+    property_override("ro.build.tags", "release-keys");
+    
     // Workaround SafetyNet
     workaround_snet_properties();
     
