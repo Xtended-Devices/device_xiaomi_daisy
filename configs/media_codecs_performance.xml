@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright (c) 2015, The Linux Foundation. All rights reserved.
-
      Not a Contribution.
-
      Copyright 2015 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -45,8 +40,8 @@
         <MediaCodec name="OMX.qcom.video.encoder.vp8" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x180" range="312-312" />
             <Limit name="measured-frame-rate-640x360" range="175-174" />
-            <Limit name="measured-frame-rate-1280x720" range="30-40" />
-            <Limit name="measured-frame-rate-1920x1080" range="20-25" />
+            <Limit name="measured-frame-rate-1280x720" range="12-28" />
+            <Limit name="measured-frame-rate-1920x1080" range="28-29" />
         </MediaCodec>
         <MediaCodec name="OMX.google.h264.encoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="185-185" />
@@ -80,7 +75,7 @@
             <Limit name="measured-frame-rate-1920x1088" range="88-88" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="482-492" />
+            <Limit name="measured-frame-rate-352x288" range="540-548" />
             <Limit name="measured-frame-rate-640x360" range="188-188" />
             <Limit name="measured-frame-rate-720x480" range="338-338" />
             <Limit name="measured-frame-rate-1280x720" range="241-241" />
@@ -144,4 +139,3 @@
          </MediaCodec>
     </Decoders>
 </MediaCodecs>
-
