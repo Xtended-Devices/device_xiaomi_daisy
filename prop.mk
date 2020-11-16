@@ -103,7 +103,6 @@ debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
-persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
@@ -297,10 +296,6 @@ sys.keep_app_1=com.dolby.ds1appUI
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.com.google.ime.corner_key_r=35 \
 ro.com.google.ime.kb_pad_port_b=1
-
-# Property to choose between virtual/external wfd display
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.wfd.virtual=0
 
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
