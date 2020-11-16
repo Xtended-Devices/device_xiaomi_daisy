@@ -221,12 +221,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libvulkan \
     liboverlay \
-    libqdMetaData.system \
-    libqdMetaData \
     libgenlock \
-    libtinyxml \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
+    libtinyxml
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -325,11 +321,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.daisy
 
-# Media
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail_vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml::$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -396,7 +387,8 @@ PRODUCT_PACKAGES += \
 
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    perf \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -542,14 +534,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # World APN list
 PRODUCT_COPY_FILES += \
