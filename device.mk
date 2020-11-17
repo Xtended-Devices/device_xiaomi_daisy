@@ -353,10 +353,12 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
+    libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
+    libstagefright_softomx \
     libstagefrighthw \
     libstagefright_omx.vendor
 
