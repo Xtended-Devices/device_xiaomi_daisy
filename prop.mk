@@ -106,7 +106,6 @@ debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
@@ -165,6 +164,11 @@ ro.lmk.kill_timeout_ms=100 \
 ro.lmk.use_minfree_levels=true \
 ro.lmk.log_stats=true \
 ro.lmk.use_psi=true
+
+# Live Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+debug.sf.latch_unsignaled=1 \
+debug.sf.disable_backpressure=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
