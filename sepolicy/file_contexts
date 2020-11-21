@@ -63,6 +63,9 @@
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
+
+# Thermal
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti                                                u:object_r:hal_thermal_default_exec:s0
  
 # Ir
 /dev/peel_ir					                                                           u:object_r:lirc_device:s0

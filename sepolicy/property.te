@@ -10,4 +10,5 @@ vendor_restricted_prop(vendor_mwqem_prop);
 
 # Thermal engine
 type thermal_engine_prop, property_type;
+type vendor_thermal_prop, property_type;
 
