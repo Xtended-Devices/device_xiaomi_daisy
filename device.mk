@@ -223,7 +223,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libvulkan \
-    liboverlay \
     libgenlock \
     libtinyxml \
     vendor.display.config@1.9 \
