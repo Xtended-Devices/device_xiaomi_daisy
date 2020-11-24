@@ -56,7 +56,7 @@ allow init sysfs_battery_supply:file setattr;
 allow init proc_boot_reason:file r_file_perms;
 allow init proc_touchpanel:file { open write };
 allow init same_process_hal_file:file execute;
-allow init hal_keymaster_hwservice:hwservice_manager add;
+allow init hal_keymaster_hwservice:hwservice_manager { add find };
 allow init hal_power_stats_hwservice:hwservice_manager add;
 allow init hidl_base_hwservice:hwservice_manager add;
 allow init hwservicemanager:binder { call transfer };
