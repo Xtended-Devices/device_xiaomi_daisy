@@ -4,6 +4,9 @@ type proc_boot_reason, fs_type, proc_type;
 # Camera
 type camera_socket, file_type, data_file_type;
 
+# CNE
+type cnd_core_data_file, file_type, core_data_file_type, data_file_type;
+
 # Fingerprint
 type fpc_data_file, file_type, core_data_file_type, data_file_type;
 type fpce_socket, file_type;
@@ -44,3 +47,6 @@ type sysfs_msmthermal, sysfs_type, file_type;
 type sysfs_corecontrol, sysfs_type, file_type;
 type sysfs_vddrestrict, sysfs_type, file_type;
 type kcal_dev, sysfs_type, file_type;
+
+# Prefix vendor_
+type vendor_dataservice_app, fs_type;
