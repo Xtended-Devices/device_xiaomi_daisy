@@ -611,10 +611,6 @@ function configure_zram_parameters() {
         let zRamSizeMB=4096
     fi
 
-    if [ "$low_ram" == "true" ]; then
-        echo lz4 > /sys/block/zram0/comp_algorithm
-    fi
-
     if [ -f /sys/block/zram0/disksize ]; then
         if [ -f /sys/block/zram0/use_dedup ]; then
             echo 1 > /sys/block/zram0/use_dedup
@@ -5801,7 +5797,7 @@ sysctl -w kernel.sched_util_clamp_min=128
 #top-app
 echo max > /dev/cpuset/top-app/uclamp.max
 echo 85 > /dev/cpuset/top-app/uclamp.min
-echo 1   > /dev/cpuset/top-app/uclamp.latency_sensitive 
+echo 1   > /dev/cpuset/top-app/uclamp.latency_sensitive
 
 #foreground
 echo 50 > /dev/cpuset/foreground/uclamp.max
