@@ -816,7 +816,6 @@ function configure_zram_parameters() {
     fi
 
     # Setup zram options
-    echo lz4 > /sys/block/zram0/comp_algorithm
     echo 4   > /sys/block/zram0/max_comp_streams
     echo 0   > /proc/sys/vm/page-cluster
 
