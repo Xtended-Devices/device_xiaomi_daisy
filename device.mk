@@ -467,10 +467,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Thermal
 PRODUCT_PACKAGES += \
     thermal.msm8953
