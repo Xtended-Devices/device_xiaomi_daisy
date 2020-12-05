@@ -6,3 +6,7 @@ allow untrusted_app_29 theme_prop:file { read };
 allow untrusted_app_29 proc_zoneinfo:file { read };
 allow untrusted_app_29 proc:file { read };
 allow untrusted_app_29 dalvikcache_data_file:file { execmod };
+allow untrusted_app_29 mnt_sdcard_file:lnk_file { read };
+allow untrusted_app_29 mnt_pass_through_file:dir { getattr };
+allow untrusted_app_29 mnt_media_rw_file:dir { getattr };
+allow untrusted_app_29 mnt_product_file:dir { read };
