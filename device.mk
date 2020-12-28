@@ -337,12 +337,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstagefright_enc_common
 
-# Netutils
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0 \
-    android.system.net.netd@1.0 \
-    libandroid_net
-
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
