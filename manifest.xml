@@ -182,6 +182,7 @@
             <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
