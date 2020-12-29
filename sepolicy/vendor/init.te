@@ -101,3 +101,4 @@ allow init hal_audio_default:binder call;
 allow init platform_app:binder call;
 allow init ipacm:process { noatsecure };
 allow init hal_usb_hwservice:hwservice_manager { find };
+allow init netutils_wrapper_exec:file { execute };
