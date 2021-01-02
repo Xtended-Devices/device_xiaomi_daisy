@@ -272,6 +272,7 @@ debug.sf.earlyGl.app.duration=21000000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.backup.ntpServer=0.pool.ntp.org \
 persist.vendor.delta_time.enable=true
 
 # Tcp
