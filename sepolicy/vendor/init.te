@@ -101,4 +101,6 @@ allow init hal_audio_default:binder call;
 allow init platform_app:binder call;
 allow init ipacm:process { noatsecure };
 allow init hal_usb_hwservice:hwservice_manager { find };
-allow init netutils_wrapper_exec:file { execute };
+allow init netutils_wrapper_exec:file { execute read open };
+allow init diag_device:chr_file { read write };
+allow init self:netlink_route_socket rw_socket_perms;
