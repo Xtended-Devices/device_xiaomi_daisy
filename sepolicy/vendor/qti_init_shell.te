@@ -44,3 +44,7 @@ allow qti_init_shell proc_boot_reason:file { getattr open read };
 allow qti_init_shell proc_dirty:file { write };
 allow qti_init_shell self:socket create;
 allow qti_init_shell configfs:dir { write };
+allow qti_init_shell proc_dirty_ratio:file { write };
+allow qti_init_shell mnt_user_file:dir { getattr };
+allow qti_init_shell linkerconfig_file:dir { getattr };
+allow qti_init_shell linkerconfig_file:dir { getattr search };
