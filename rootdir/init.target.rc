@@ -45,15 +45,6 @@ on fs
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-    setprop ro.vendor.hw.dualsim ${ro.boot.dualsim}
-    setprop ro.vendor.hw.device ${ro.boot.device}
-    setprop ro.vendor.hw.radio ${ro.boot.radio}
-
-on property:ro.vendor.hw.dualsim=true
-    setprop persist.radio.multisim.config dsds
-
-on property:ro.vendor.hw.dualsim=false
-    setprop persist.radio.multisim.config ""
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
