@@ -1865,7 +1865,7 @@ vendor/lib64/libgf_ca.so|a109ea31c3968ecd8298a6316b93e16d5d8dfdcd
 vendor/lib64/libgf_hal.so|7ed7ac6bcc9172d1f36da5dc33b32af97170413e
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|28fc1d738cdd5cde4b31595ec819c4267fb367a3
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|0c5745649eac2b5478ef891a51b18b999bb45fce
 
 # Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 etc/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
@@ -1889,9 +1889,9 @@ vendor/firmware/goodixfp.b06|826951cf2ced420f537a17f97eec815f89f373b0
 vendor/firmware/goodixfp.mdt|4eb8e95418a3512469cc91bb8d01cecc401d42d0
 
 # QC RIL - from LA.UM.8.6.2.r1-06600-89xx.0
-vendor/bin/hw/qcrild|55a9c79ca552f4b9f0084afaae408d005cc445c2
+vendor/bin/hw/qcrild|e6388657a78502c6211ff7dd54d1edbc7e97f148
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
-vendor/lib64/libqcrilFramework.so|1d257097226095d7f976479bff0beafca85c8b3a
-vendor/lib64/libril-qc-hal-qmi.so|810d94acb1086711336f04084543c8fbf1cc9843
+vendor/lib64/libqcrilFramework.so|7d51b9b1d28c3b09aa8b76251c5831b8275dcc6d
+vendor/lib64/libril-qc-hal-qmi.so|0b063cbd611dece0331315df86b2dd235d329e5c
 vendor/lib64/qcrild_librilutils.so|22ae52ea7750c9011e3880852d800d94d54b030e
 
