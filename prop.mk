@@ -286,6 +286,10 @@ ro.hw_timeout_multiplier=6
 PRODUCT_VENDOR_PROPERTIES += \
 wifi.interface=wlan0
 
+# Fdsan
+PRODUCT_VENDOR_PROPERTIES += \
+debug.fdsan=0
+
 # Google Photos
 PRODUCT_VENDOR_PROPERTIES += \
 debug.photos.eraser_camo=1 \
