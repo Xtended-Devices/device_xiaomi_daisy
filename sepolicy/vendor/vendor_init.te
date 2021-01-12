@@ -18,6 +18,7 @@ get_prop(vendor_init, persist_debug_prop)
 # /proc
 allow vendor_init proc_swappiness:file w_file_perms;
 allow vendor_init proc_dirty:file w_file_perms;
+allow vendor_init proc_dirty_ratio:file w_file_perms;
 
 # Allow vendor_init to set vendor_camera_prop
 set_prop(vendor_init, vendor_camera_prop)
