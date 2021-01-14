@@ -85,6 +85,10 @@ ro.charger.enable_suspend=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.kernel.ebpf.supported=true
 
+# FOD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.fingerprint.inscreen_disabled=true
+
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
