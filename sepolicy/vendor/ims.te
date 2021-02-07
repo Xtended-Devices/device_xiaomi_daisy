@@ -1,3 +1,2 @@
 allow ims sysfs:file { open read };
 allow ims diag_device:chr_file { read write open };
-add_hwservice(ims, vnd_qti_ims_factory_hwservice)

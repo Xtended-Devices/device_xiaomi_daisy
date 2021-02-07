@@ -104,6 +104,6 @@ allow untrusted_app bpf_progs_loaded_prop:file { getattr open read };
 allow untrusted_app proc_loadavg:file { read };
 allow untrusted_app sysfs:file { read };
 allow untrusted_app sysfs_kgsl:lnk_file { read };
-allow untrusted_app vendor_system_prop:file { read open getattr };
+allow untrusted_app vendor_system_prop:file { read open };
 allow untrusted_app system_file:file { write };
 allow untrusted_app exported_camera_prop:file { read };

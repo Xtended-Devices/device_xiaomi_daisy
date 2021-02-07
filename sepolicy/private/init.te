@@ -1,2 +1,0 @@
-allow init vendor_dpmd_exec:file { getattr execute read open execute_no_trans };
-allow init bpfloader:bpf { prog_run };

@@ -43,19 +43,3 @@ r_dir_file(qti_init_shell, vfat)
 allow qti_init_shell proc_boot_reason:file { getattr open read };
 allow qti_init_shell proc_dirty:file { write };
 allow qti_init_shell self:socket create;
-allow qti_init_shell configfs:dir { write add_name };
-allow qti_init_shell proc_dirty_ratio:file { write open };
-allow qti_init_shell mnt_user_file:dir { getattr };
-allow qti_init_shell linkerconfig_file:dir { getattr };
-allow qti_init_shell linkerconfig_file:dir { getattr search };
-allow qti_init_shell mirror_data_file:dir { getattr search };
-allow qti_init_shell configfs:file { create };
-allow qti_init_shell user_profile_data_file:dir { getattr };
-allow qti_init_shell labeledfs:filesystem { remount };
-allow qti_init_shell system_block_device:blk_file { read open };
-allow qti_init_shell shell_exec:file { getattr execute read open execute_no_trans };
-allow qti_init_shell system_file:file { getattr };
-allow qti_init_shell apexd_exec:file { getattr };
-allow qti_init_shell zygote_exec:file { getattr };
-
-allowxperm qti_init_shell system_block_device:blk_file ioctl 0x125d;

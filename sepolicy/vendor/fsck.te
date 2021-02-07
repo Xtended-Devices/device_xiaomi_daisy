@@ -1,7 +1,7 @@
 allow fsck block_device:blk_file { ioctl open read write };
 allow fsck self:capability dac_override;
 allow fsck tmpfs:blk_file { getattr };
-allow fsck fsck:capability { sys_admin kill };
+allow fsck fsck:capability { sys_admin };
 allow fsck mnt_vendor_file:dir { search getattr };
 allow fsck cache_block_device:blk_file { getattr read write };
 allow fsck userdata_block_device:blk_file { getattr read write };

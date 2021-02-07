@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_daisy.mk
+    $(LOCAL_DIR)/havoc_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_daisy-user \
-    syberia_daisy-userdebug \
-    syberia_daisy-eng
+    havoc_daisy-user \
+    havoc_daisy-userdebug \
+    havoc_daisy-eng

@@ -1,18 +1,5 @@
 allow gmscore_app linkerconfig_file:dir { getattr };
 allow gmscore_app vendor_file:file { read open getattr };
-allow gmscore_app mnt_vendor_file:lnk_file { getattr };
 allow gmscore_app exported_camera_prop:file { read open getattr };
 allow gmscore_app persist_camera_prop:file { read open getattr };
 allow gmscore_app hal_memtrack_hwservice:hwservice_manager { find };
-allow gmscore_app hal_memtrack_default:binder call;
-allow gmscore_app mirror_data_file:dir { getattr };
-allow gmscore_app postinstall_mnt_dir:dir { getattr };
-allow gmscore_app init_exec:lnk_file { getattr };
-allow gmscore_app configfs:dir { read open search };
-allow gmscore_app apex_mnt_dir:dir { read open };
-allow gmscore_app mnt_sdcard_file:lnk_file { getattr };
-allow gmscore_app mnt_pass_through_file:dir { getattr };
-allow gmscore_app mnt_vendor_file:dir { getattr read };
-allow gmscore_app mnt_product_file:dir { getattr read };
-allow gmscore_app asec_apk_file:dir { getattr read };
-allow gmscore_app mnt_media_rw_file:dir { getattr };

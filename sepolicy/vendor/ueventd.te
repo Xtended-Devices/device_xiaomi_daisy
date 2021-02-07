@@ -16,7 +16,6 @@ allow ueventd vfat:file { read };
 allow ueventd vfat:file { open };
 allow ueventd vfat:file { getattr open read };
 allow ueventd ueventd:capability { sys_admin kill };
-allow ueventd block_device:blk_file { read open };
 
 
 dontaudit ueventd mba_debug_dev:blk_file r_file_perms;

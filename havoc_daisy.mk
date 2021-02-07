@@ -33,12 +33,12 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Syberia stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+# Inherit some common HavocOS-ROM stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := syberia_daisy
+PRODUCT_NAME := havoc_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -48,10 +48,10 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sunfish-user 11 RQ1A.210105.002 6985033 release-keys"
+    PRIVATE_BUILD_DESC="sunfish-user 11 RP1A.201105.002 6869500 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys"
+BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
@@ -59,4 +59,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-SYBERIA_BUILD_TYPE := UNOFFICIAL
+#HavocOS Build
+HAVOC_BUILD_TYPE := OFFICIAL

@@ -26,5 +26,3 @@ allow hal_camera_default sysfs_kgsl:dir { search };
 allow hal_camera_default bg_boot_complete_prop:file { read open getattr };
 allow hal_camera_default bg_daemon_prop:file { read open getattr };
 allow hal_camera_default bluetooth_prop:file { read open getattr };
-
-binder_call(hal_camera_default, init)

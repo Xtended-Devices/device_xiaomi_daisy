@@ -1,1 +1,1 @@
-allow mediaserver vendor_file:file { read open getattr };
+allow mediaserver vendor_file:file { read };

@@ -1,4 +1,1 @@
 allow hal_rcsservice sysfs:file { open read };
-
-# add imsfactory to HIDl interface
-add_hwservice(hal_rcsservice, hal_imsfactory_hwservice)

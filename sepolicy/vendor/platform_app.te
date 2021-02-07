@@ -61,6 +61,4 @@ allow platform_app vendor_system_prop:file { getattr read open };
 allow platform_app sensors_panel_prop:file { getattr read open };
 allow platform_app sysfs_graphics:dir { search read };
 allow platform_app exported_camera_prop:file { read };
-allow platform_app sysfs_graphics:file { read };
-allow platform_app qcom_ims_prop:file { read open getattr };
 

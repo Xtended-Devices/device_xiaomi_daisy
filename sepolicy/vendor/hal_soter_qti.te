@@ -1,2 +1,0 @@
-allow hal_soter_qti vfat:dir { search };
-allow hal_soter_qti vfat:file { read open getattr };

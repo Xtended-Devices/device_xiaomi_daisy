@@ -1,1 +1,0 @@
-allow sysinit sysinit:capability { sys_admin };

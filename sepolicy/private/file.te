@@ -1,4 +1,4 @@
-type adbroot, fs_type;
-type adbroot_exec, fs_type;
+#type adbroot, fs_type;
+#type adbroot_exec, fs_type;
 type ashmemd_exec, fs_type;
 type wificond_service, fs_type;
