@@ -74,8 +74,7 @@ persist.camera.HAL3.enabled=1
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.cne.feature=1 \
-persist.vendor.dpm.feature=0
+persist.vendor.cne.feature=1
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -89,6 +88,13 @@ ro.kernel.ebpf.supported=true
 # FOD
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fingerprint.inscreen_disabled=true
+
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.dpm.feature=11 \
+persist.vendor.dpm.loglevel=0 \
+persist.vendor.dpm.nsrm.bkg.evt=3955 \
+persist.vendor.dpmhalservice.enable=1
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
