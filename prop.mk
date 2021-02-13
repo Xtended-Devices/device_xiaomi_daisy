@@ -59,7 +59,7 @@ persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
 persist.bluetooth.a2dp_offload.disabled=true \
 persist.vendor.qcom.bluetooth.enable.splita2dp=false \
-ro.bluetooth.a2dp_offload.supported=false\
+ro.bluetooth.a2dp_offload.supported=false \
 persist.vendor.qcom.bluetooth.soc=pronto \
 vendor.qcom.bluetooth.soc=pronto
 
