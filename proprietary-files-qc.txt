@@ -637,6 +637,7 @@ vendor/etc/init/vendor.qti.rmt_storage.rc|8cfec5930a356ebf2035eec4c11a6fae4a8706
 vendor/etc/init/vendor.qti.tftp.rc|dee04804aea967e3ff7801f789ae49c6a779ba56
 vendor/etc/seccomp_policy/atfwd@2.0.policy|c371126e88676d9405faf087b9880aa95cc9510d
 vendor/lib/libmdmdetect.so|b7c1e8ae955840f76cc6244d6511a92d15fb5f6e
+vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/lib-rcsconfig.so|804dd9835031a25970e918d9ffe877696ea233c8
 vendor/lib64/libconfigdb.so|de8f492463cd932cb82b12d7d0c1d0c9c894dc6d
 vendor/lib64/libdsi_netctrl.so|be8a6665ece98e1fe3dc895c60a383ba6b1f8873
