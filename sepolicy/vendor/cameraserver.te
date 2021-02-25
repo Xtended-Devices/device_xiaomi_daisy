@@ -1,4 +1,7 @@
 allow cameraserver mediacodec:binder call;
-allow cameraserver vendor_persist_camera_prop:file { open read getattr };
+#allow cameraserver vendor_persist_camera_prop:file { open read getattr };
+allow cameraserver persist_camera_prop:file { open read getattr };
 allow cameraserver vendor_file:file { execute getattr open read };
 allow cameraserver sysfs_kgsl:dir { search };
+allow cameraserver camera_data_file:dir { search write add_name };
+allow cameraserver camera_data_file:file { create write open };

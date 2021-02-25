@@ -1,5 +1,8 @@
 allow permissioncontroller_app adbd_prop:file { open read getattr };
 #allow permissioncontroller_app adsprpc_prop:file { open read getattr };
+#allow permissioncontroller_app sysfs_kgsl:dir { search };
+#allow permissioncontroller_app bg_boot_complete_prop:file { open read getattr };
 allow permissioncontroller_app apexd_prop:file { open read getattr };
 allow permissioncontroller_app theme_prop:file { open read getattr };
 allow permissioncontroller_app unlabeled:file { open read getattr };
+allow permissioncontroller_app apk_verity_prop:file { open read getattr };

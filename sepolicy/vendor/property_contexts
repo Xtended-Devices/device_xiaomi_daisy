@@ -4,6 +4,9 @@ camera.dual.mode           u:object_r:camera_prop:s0
 persist.camera.            u:object_r:camera_prop:s0
 hardware.camera.autohdr    u:object_r:camera_prop:s0
 
+#Aux
+#vendor.camera.aux.packagelist        u:object_r:persist_camera_prop:s0
+
 # HAL1 prop readable to everything
 camera.hal1.packagelist         		u:object_r:exported_default_prop:s0
 

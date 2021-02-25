@@ -14,3 +14,4 @@ allow wcnss_service vendor_default_prop:property_service { set };
 dontaudit wcnss_service serialno_prop:file read;
 allow wcnss_service property_socket:sock_file { write };
 allow wcnss_service vfat:file { open read getattr };
+allow wcnss_service vfat:dir { search };

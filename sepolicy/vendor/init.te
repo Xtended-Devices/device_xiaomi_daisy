@@ -99,3 +99,7 @@ allow init sysfs_kgsl:file { setattr };
 allow init sysfs_kgsl:lnk_file { read };
 allow init hal_power_stats_hwservice:hwservice_manager { find };
 allow init su:process { transition };
+allow init sysfs_graphics:file { open read getattr };
+allow init hal_thermal_hwservice:hwservice_manager { find };
+allow init hal_perf_hwservice:hwservice_manager { add };
+allow init hal_thermal_hwservice:hwservice_manager { add };

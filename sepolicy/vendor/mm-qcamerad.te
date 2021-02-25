@@ -1,7 +1,9 @@
 allow mm-qcamerad camera_data_file:dir { add_name write search };
 allow mm-qcamerad camera_data_file:file { create getattr open write };
-allow mm-qcamerad vendor_persist_camera_prop:file { getattr open read };
-allow mm-qcamerad vendor_persist_camera_prop:property_service set;
+#allow mm-qcamerad vendor_persist_camera_prop:file { getattr open read };
+#allow mm-qcamerad vendor_persist_camera_prop:property_service set;
+allow mm-qcamerad persist_camera_prop:file { getattr open read };
+allow mm-qcamerad persist_camera_prop:property_service set;
 allow mm-qcamerad sysfs_kgsl:lnk_file read;
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket1";
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket2";

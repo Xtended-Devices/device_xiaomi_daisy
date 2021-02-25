@@ -16,3 +16,4 @@ allow zygote system_data_file:sock_file { write };
 allow zygote system_server:unix_dgram_socket { sendto };
 allow zygote exported_camera_prop:file { read open getattr };
 allow zygote device:file { write };
+allow zygote device:file { open read getattr };

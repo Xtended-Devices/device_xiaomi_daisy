@@ -30,3 +30,4 @@ allow crash_dump media_variant_prop:file { open read getattr };
 allow crash_dump virtual_ab_prop:file { open read getattr };
 allow crash_dump exported_camera_prop:file { open read getattr };
 allow crash_dump vendor_display_prop:file { open read getattr };
+allow crash_dump init:process { ptrace };
