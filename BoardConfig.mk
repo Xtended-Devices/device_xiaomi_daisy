@@ -196,6 +196,7 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+TARGET_PREBUILT_RECOVERY_RAMDISK := $(DEVICE_PATH)/prebuilts/ramdisk-recovery.cpio.gz
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
