@@ -33,6 +33,7 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
+#include <vector>
 
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -89,24 +90,15 @@ static const char *snet_prop_value[] = {
   NULL
 };
 
-void property_override(char const prop[], char const value[])
+void property_override(char const prop[], char const value[], bool add = true)
 {
-    prop_info *pi;
+    auto pi = (prop_info *) __system_property_find(prop);
 
-    pi = (prop_info*) __system_property_find(prop);
-    if (pi)
+    if (pi != nullptr) {
         __system_property_update(pi, value, strlen(value));
-    else
+    } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
-}
-
-void property_override_multifp(char const buildfp[], char const systemfp[],
-  char const bootimagefp[], char const vendorfp[], char const value[])
-{
-  property_override(buildfp, value);
-  property_override(systemfp, value);
-  property_override(bootimagefp, value);
-  property_override(vendorfp, value);
+    }
 }
 
 void check_device()
@@ -153,8 +145,31 @@ static void workaround_snet_properties() {
   chmod("/sys/fs/selinux/policy", 0440);
 }
 
+std::vector<std::string> ro_props_default_source_order = {
+        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.",
+};
+
+void set_ro_build_prop(const std::string& prop, const std::string& value) {
+    for (const auto& source : ro_props_default_source_order) {
+        auto prop_name = "ro." + source + "build." + prop;
+        if (source == "")
+            property_override(prop_name.c_str(), value.c_str());
+        else
+            property_override(prop_name.c_str(), value.c_str(), false);
+    }
+};
+
 void vendor_load_properties()
 {
+    std::string fingerprint;
+    std::string description;
+
+    fingerprint = "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys";
+    description = "tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys";
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    property_override("ro.build.description", description.c_str());
+
     check_device();
 
     property_set("dalvik.vm.heapstartsize", heapstartsize);
