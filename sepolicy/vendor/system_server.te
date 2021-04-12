@@ -22,3 +22,6 @@ allow system_server goodix_fp_hwservice:hwservice_manager find;
 allow system_server exported_camera_prop:file { read open getattr };
 allow system_server userspace_reboot_config_prop:file { read open getattr };
 allow system_server userspace_reboot_exported_prop:file { read open getattr };
+
+# Smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
