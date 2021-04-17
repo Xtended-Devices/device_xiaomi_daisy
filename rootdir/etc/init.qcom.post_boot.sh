@@ -5795,7 +5795,7 @@ sysctl -w net.ipv4.tcp_congestion_control=westwood
 #Uclamp changes (reduces jitter,apparently)
 
 #system-wide
-sysctl -w kernel.sched_rt_default_util_clamp_min=500
+sysctl -w kernel.sched_util_clamp_min_rt_default=500
 sysctl -w kernel.sched_util_clamp_min=128
 
 #top-app
