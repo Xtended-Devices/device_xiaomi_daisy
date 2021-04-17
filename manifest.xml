@@ -238,16 +238,6 @@
         <fqname>@1.1::IDataConnection/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IPictureAdjustment/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.trust</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IUsbRestrict/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IEsePowerManager/default</fqname>
