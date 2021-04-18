@@ -76,6 +76,7 @@
 /dev/peel_ir					                                                           u:object_r:lirc_device:s0
 
 # Root folders
+/bt_firmware(/.*)? 													u:object_r:bt_firmware_file:s0
 /firmware(/.*)?                                                                                            u:object_r:firmware_file:s0
 /persist(/.*)?        											   u:object_r:mnt_vendor_file:s0
 
