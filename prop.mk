@@ -1,5 +1,5 @@
 #
-# system.prop for sakura
+# system.prop for daisy
 #
 
 # ART

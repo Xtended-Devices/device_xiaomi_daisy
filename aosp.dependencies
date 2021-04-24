@@ -1,25 +1,20 @@
 [
   {
-    "repository" : "android_kernel_xiaomi_sakura",
-    "target_path": "kernel/xiaomi/msm8953",
+    "repository" : "TheSanty/kernel_xiaomi_msm8953",
+    "target_path": "kernel/xiaomi/daisy",
+    "branch"     : "a11/master",
     "clone-depth": "1"
   },
   {
-    "repository" : "proprietary_vendor_xiaomi_sakura",
+    "repository" : "lupesoltec/android_vendor_xiaomi_daisy",
     "target_path": "vendor/xiaomi",
+    "branch"     : "12",
     "clone-depth": "1"
   },
   {
-    "repository" : "mvaisakh/gcc-arm64",
-    "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
-    "branch"     : "gcc-master",
-    "clone-depth": "1",
-    "remote"     : "github"
-  },
-  {
-    "repository" : "geopd/vendor_custom_prebuilts",
+    "repository" : "lupesoltec/vendor_custom_prebuilts",
     "target_path": "vendor/custom/prebuilts",
     "branch"     : "master",
-    "remote"     : "github"
+    "clone-depth": "1"
   }
 ]

@@ -16,7 +16,7 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#define BTM_DEF_LOCAL_NAME "Redmi 6 Pro"
+#define BTM_DEF_LOCAL_NAME "Mi A2 Lite"
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS    16
 #define MAX_L2CAP_CHANNELS    32

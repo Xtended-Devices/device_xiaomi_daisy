@@ -27,18 +27,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit some prebuilts
 $(call inherit-product, vendor/custom/prebuilts/config.mk)
 
-# Inherit from sakura device
-$(call inherit-product, device/xiaomi/sakura/device.mk)
+# Inherit from daisy device
+$(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common AEX stuff.
+# Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sakura
-PRODUCT_NAME := aosp_sakura
+PRODUCT_DEVICE := daisy
+PRODUCT_NAME := aosp_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 6 Pro
+PRODUCT_MODEL := Mi A2 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
