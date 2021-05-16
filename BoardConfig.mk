@@ -205,7 +205,7 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
