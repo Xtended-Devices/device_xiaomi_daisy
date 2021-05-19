@@ -134,15 +134,28 @@ void check_device()
     }
 }
 
-static void workaround_snet_properties() {
+/* From Magisk@jni/magiskhide/hide_policy.cpp */
+static const char *prop_key[] =
+        { "ro.boot.vbmeta.device_state", "ro.boot.verifiedbootstate", "ro.boot.flash.locked",
+          "ro.boot.veritymode", "ro.boot.warranty_bit", "ro.warranty_bit",
+          "ro.debuggable", "ro.secure", "ro.build.type", "ro.build.tags",
+          "ro.vendor.boot.warranty_bit", "ro.vendor.warranty_bit",
+          "vendor.boot.vbmeta.device_state", "vendor.boot.verifiedbootstate", nullptr };
 
-  // Hide all sensitive props
-  for (int i = 0; snet_prop_key[i]; ++i) {
-    property_override(snet_prop_key[i], snet_prop_value[i]);
+static const char *prop_val[] =
+        { "locked", "green", "1",
+          "enforcing", "0", "0",
+          "0", "1", "user", "release-keys",
+          "0", "0",
+          "locked", "green", nullptr };
+
+static void workaround_properties() {
+
+    // Hide all sensitive props
+    for (int i = 0; prop_key[i]; ++i) {
+        property_override(prop_key[i], prop_val[i], false);
   }
 
-  chmod("/sys/fs/selinux/enforce", 0640);
-  chmod("/sys/fs/selinux/policy", 0440);
 }
 
 std::vector<std::string> ro_props_default_source_order = {
@@ -188,7 +201,6 @@ void vendor_load_properties()
 
     property_override("ro.oem_unlock_supported", "0");
 
-    // Workaround SafetyNet
-    workaround_snet_properties();
+    workaround_properties();
     
 }
