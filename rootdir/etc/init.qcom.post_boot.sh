@@ -812,7 +812,6 @@ function configure_zram_parameters() {
     fi
 
     # Setup zram options
-    echo 4   > /sys/block/zram0/max_comp_streams
     echo 0   > /proc/sys/vm/page-cluster
 
     if [ -f /sys/block/zram0/disksize ]; then
@@ -830,8 +829,6 @@ function configure_zram_parameters() {
             echo 0 > /sys/kernel/slab/zspage/store_user
         fi
 
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
     fi
 }
 
