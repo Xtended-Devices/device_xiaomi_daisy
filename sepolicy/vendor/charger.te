@@ -1,1 +1,0 @@
-allow charger rootfs:file { entrypoint };

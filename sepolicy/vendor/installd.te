@@ -1,4 +1,0 @@
-allow installd adsprpcd_file:filesystem quotaget;
-allow installd idmap:process noatsecure;
-allow installd device:file { open write };
-allow installd installd:capability { kill };

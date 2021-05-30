@@ -1,2 +1,0 @@
-allow mediaswcodec servicemanager:binder call;
-allow mediaswcodec gpu_device:chr_file { open read write ioctl };

@@ -1,6 +1,0 @@
-allow cnd hostapd:process { sigkill };
-allow cnd sysfs:file { open read };
-allow cnd default_android_hwservice:hwservice_manager { find };
-allow cnd hal_slmadapter_hwservice:hwservice_manager find;
-allow cnd wifi_prop:file { getattr open read };
-allow cnd diag_device:chr_file { read write };

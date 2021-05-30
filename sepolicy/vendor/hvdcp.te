@@ -1,3 +1,0 @@
-allow hvdcp sysfs:dir { open read };
-allow hvdcp sysfs:file { open read write };
-allow hvdcp hvdcp:capability { sys_admin };

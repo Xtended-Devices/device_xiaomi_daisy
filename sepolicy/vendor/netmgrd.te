@@ -1,8 +1,0 @@
-set_prop(netmgrd, vendor_xlat_prop)
-allow netmgrd kernel:system module_request;
-allow netmgrd netutils_wrapper:process noatsecure;
-allow netmgrd sysfs:file { open read };
-allow netmgrd system_file:file { execute execute_no_trans getattr open read };
-allow netmgrd netmgrd:capability { sys_admin };
-allow netmgrd diag_device:chr_file { read write };
-allow netmgrd vendor_default_prop:property_service { set };

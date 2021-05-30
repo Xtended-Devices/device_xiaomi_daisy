@@ -1,2 +1,0 @@
-allow location kernel:system module_request;
-allow location sysfs:file { open read };

@@ -1,0 +1,8 @@
+set_prop(vendor_dpmd, ctl_stop_prop)
+allow vendor_dpmd vendor_dpmd:capability { sys_admin };
+
+userdebug_or_eng(`
+  allow vendor_dpmd diag_device:chr_file rw_file_perms;
+')
+
+dontaudit vendor_dpmd diag_device:chr_file rw_file_perms;

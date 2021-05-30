@@ -1,3 +1,0 @@
-allow migrate_legacy_obb_data apk_data_file:file { read };
-allow migrate_legacy_obb_data dalvikcache_data_file:file { read write };
-allow migrate_legacy_obb_data migrate_legacy_obb_data:capability { sys_admin };

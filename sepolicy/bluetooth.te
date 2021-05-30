@@ -1,0 +1,4 @@
+#allow bluetooth to make binder call to gpuservice
+binder_call(bluetooth, gpuservice);
+
+allow bluetooth theme_prop:file { read open getattr };

@@ -1,4 +1,0 @@
-allow hal_sensors_default self:socket read;
-#allow hal_sensors_default sensors_dbg_prop:file { getattr open read };
-allow hal_sensors_default sysfs:file { open read };
-allow hal_sensors_default diag_device:chr_file { read write };

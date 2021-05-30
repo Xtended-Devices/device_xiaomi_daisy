@@ -1,0 +1,3 @@
+allow zygote zygote:capability { kill };
+allow zygote exported_camera_prop:file { read open getattr };
+get_prop(zygote, theme_prop);

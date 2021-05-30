@@ -1,5 +1,0 @@
-allow gmscore_app linkerconfig_file:dir { getattr };
-allow gmscore_app vendor_file:file { read open getattr };
-allow gmscore_app exported_camera_prop:file { read open getattr };
-allow gmscore_app persist_camera_prop:file { read open getattr };
-allow gmscore_app hal_memtrack_hwservice:hwservice_manager { find };

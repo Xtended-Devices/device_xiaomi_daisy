@@ -1,2 +1,0 @@
-allow qtidataservices_app hal_perf_hwservice:hwservice_manager { find };
-allow qtidataservices_app qtidataservices_app:socket { read write ioctl create};

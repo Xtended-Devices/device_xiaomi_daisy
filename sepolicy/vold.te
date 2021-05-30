@@ -1,0 +1,5 @@
+allow vold proc_touchpanel:dir r_dir_perms;
+allow vold sysfs:dir r_dir_perms;
+allow vold sysfs_mmc_host:file write;
+allow vold same_process_hal_file:file { execute getattr open read };
+allowxperm vold loop_device:blk_file ioctl LOOP_GET_STATUS64;

@@ -1,1 +1,0 @@
-allow fsverity_init fsverity_init:capability { sys_admin };

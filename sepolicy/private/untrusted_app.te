@@ -1,5 +1,0 @@
-allow untrusted_app adbroot_exec:file { getattr open read };
-allow untrusted_app art_apex_boot_integrity_exec:file { getattr open read };
-allow untrusted_app ashmemd_exec:file { getattr open read };
-allow untrusted_app atrace_exec:file { getattr open read };
-

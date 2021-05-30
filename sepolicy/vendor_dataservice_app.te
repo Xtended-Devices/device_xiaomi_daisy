@@ -1,0 +1,8 @@
+allow vendor_dataservice_app system_app_data_file:dir create_dir_perms;
+allow vendor_dataservice_app system_app_data_file:{ file lnk_file } create_file_perms;
+allow vendor_dataservice_app vendor_hal_slmadapter_hwservice:hwservice_manager find;
+get_prop(vendor_dataservice_app, vendor_mwqem_prop)
+allow vendor_dataservice_app vendor_hal_mwqemadapter_hwservice:hwservice_manager find;
+
+# Allow vendor_dataservice_app to read files in cnd_core_data_file
+r_dir_file(vendor_dataservice_app, cnd_core_data_file)

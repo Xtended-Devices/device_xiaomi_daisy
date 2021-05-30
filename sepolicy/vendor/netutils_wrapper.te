@@ -1,3 +1,0 @@
-dontaudit netutils_wrapper kernel:system module_request;
-dontaudit netutils_wrapper self:capability sys_module;
-allow netutils_wrapper netutils_wrapper:capability { sys_admin kill };

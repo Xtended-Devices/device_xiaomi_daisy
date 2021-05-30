@@ -1,1 +1,0 @@
-allow apexd sysfs_mmc_host:file { read write };

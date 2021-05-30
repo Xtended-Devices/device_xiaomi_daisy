@@ -1,6 +1,0 @@
-allow servicemanager update_verifier:dir search;
-allow servicemanager update_verifier:file { open read };
-allow servicemanager update_verifier:process getattr;
-allow servicemanager mediaswcodec:dir search;
-allow servicemanager mediaswcodec:file { open read };
-allow servicemanager mediaswcodec:process getattr;

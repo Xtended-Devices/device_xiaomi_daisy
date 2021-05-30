@@ -1,0 +1,19 @@
+allow priv_app proc_version:file { open };
+allow priv_app proc_version:file { getattr };
+allow priv_app sysfs:dir { open };
+allow priv_app sysfs_loop:file { read };
+allow priv_app sysfs_loop:file { open };
+allow priv_app proc_modules:file { open };
+allow priv_app device:dir { open };
+allow priv_app proc_interrupts:file { open };
+allow priv_app sysfs_android_usb:file { open };
+allow priv_app sysfs_graphics:file { read };
+allow priv_app sysfs_graphics:file { open };
+allow priv_app proc_net:file { read };
+allow priv_app proc_net:file { open };
+allow priv_app proc_net:file { getattr };
+
+#allow platform_app to read vendor_camera_prop
+get_prop(priv_app, vendor_persist_camera_prop)
+allow priv_app camera_prop:file { read open getattr };
+binder_call(priv_app, hal_memtrack_default);

@@ -1,5 +1,0 @@
-allow dumpstate init:process { signal };
-allow dumpstate adbd_exec:file { getattr };
-allow dumpstate apexd_exec:file { getattr };
-allow dumpstate thermal-engine_exec:file { getattr };
-allow dumpstate rootfs:file { getattr };

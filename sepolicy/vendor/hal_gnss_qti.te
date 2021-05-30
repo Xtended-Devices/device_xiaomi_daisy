@@ -1,2 +1,0 @@
-allow hal_gnss_qti sysfs:file { open read };
-allow hal_gnss_qti vendor_pd_locater_dbg_prop:file { read };

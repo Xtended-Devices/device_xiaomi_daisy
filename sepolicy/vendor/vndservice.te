@@ -1,2 +1,0 @@
-type goodix_fingerprint_vndservice, vndservice_manager_type;
-type hal_power_stats_service,       vndservice_manager_type;

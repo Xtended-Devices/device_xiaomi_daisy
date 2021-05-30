@@ -1,0 +1,3 @@
+set_prop(wcnss_service, wifi_prop);
+allow wcnss_service property_socket:sock_file { write };
+allow wcnss_service init:unix_stream_socket { connectto };
