@@ -1,1 +1,3 @@
 allow kernel kernel:capability { kill };
+allow kernel vfat:dir search;
+allow kernel vfat:file open;
