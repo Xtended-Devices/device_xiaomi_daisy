@@ -247,6 +247,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fakelogprint
+
 # GPS
 PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \

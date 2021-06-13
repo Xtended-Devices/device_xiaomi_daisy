@@ -211,6 +211,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # SurfaceFlinger
 TARGET_USE_QCOM_SURFACEFLINGER := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
+    /vendor/lib64/libgf_ca.so|fakelogprint.so \
+    /vendor/lib64/libgf_hal.so|fakelogprint.so
+
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
