@@ -73,7 +73,8 @@ persist.vendor.camera.CDS=off \
 persist.vendor.camera.dual.camera=1 \
 persist.camera.HAL3.enabled=1 \
 persist.vendor.camera.HAL3=1 \
-persist.camera.HAL3=1
+persist.camera.HAL3=1 \
+persist.vendor.camera.llc=0
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
