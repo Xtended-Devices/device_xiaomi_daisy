@@ -198,6 +198,12 @@ vendor.gralloc.enable_fb_ubwc=1
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# ZRAM
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.zram.mark_idle_delay_mins=60 \
+ro.zram.first_wb_delay_mins=180 \
+ro.zram.periodic_wb_delay_hours=24
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.fw.dex2oat_thread_count=8 \
