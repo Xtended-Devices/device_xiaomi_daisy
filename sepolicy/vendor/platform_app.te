@@ -8,3 +8,11 @@ get_prop(platform_app, vendor_default_prop)
 allow platform_app camera_prop:file { read open getattr };
 allow platform_app exported_camera_prop:file read;
 allow platform_app vendor_camera_prop:file read;
+
+# Fixed denials for QS tiles FPS CPU and GPU
+allow platform_app sysfs_kgsl:file { read open getattr };
+allow platform_app sysfs_battery_supply:dir { search };
+allow platform_app sysfs_battery_supply:file { read open getattr };
+allow platform_app sysfs_graphics:file { read open getattr };
+allow platform_app sysfs_batteryinfo:dir { search };
+allow platform_app sysfs_graphics:dir search;
