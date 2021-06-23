@@ -256,7 +256,11 @@ persist.vendor.radio.aosp_usr_pref_sel=true \
 service.qti.ims.enabled=1 \
 persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
-persist.vendor.cne.logging.qxdm=3974
+persist.vendor.cne.logging.qxdm=3974 \
+persist.vendor.ims.disableADBLogs=1 \
+persist.vendor.ims.disableIMSLogs=1 \
+persist.vendor.ims.disableDebugLogs=1 \
+persist.vendor.ims.disableQXDMLogs=1
 
 # Hwui
 PRODUCT_PROPERTY_OVERRIDES += \
