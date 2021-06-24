@@ -1,3 +1,4 @@
 allow gmscore_app vendor_file:file { read open };
 allow gmscore_app exported_camera_prop:file read;
 allow gmscore_app vendor_camera_prop:file read;
+allow gmscore_app hal_memtrack_hwservice:hwservice_manager find;
