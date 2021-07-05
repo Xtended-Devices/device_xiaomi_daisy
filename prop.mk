@@ -257,6 +257,7 @@ persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.multisim_switch_support=true \
 persist.vendor.radio.sib16_support=1 \
+persist.vendor.radio.enableadvancedscan=0 \
 persist.vendor.data.iwlan.enable=true \
 persist.dbg.ims_volte_enable=1 \
 persist.data.iwlan=1 \
