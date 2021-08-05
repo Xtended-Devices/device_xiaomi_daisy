@@ -237,11 +237,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service-lazy.clearkey \
     android.hardware.drm@1.3-service.widevine
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-impl \
-    android.hardware.keymaster@4.0-service
-
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
