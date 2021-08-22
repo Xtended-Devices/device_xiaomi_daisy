@@ -1,3 +1,15 @@
 allow untrusted_app_29 system_data_file:dir { read };
 allow untrusted_app_29 system_data_file:file { read open };
-allow untrusted_app_29 vendor_camera_prop:file read;
+allow untrusted_app_29 apex_mnt_dir:dir read;
+allow untrusted_app_29 blkio_dev:dir search;
+allow untrusted_app_29 cgroup_desc_file:file { getattr read };
+allow untrusted_app_29 hwservice_contexts_file:file getattr;
+allow untrusted_app_29 mac_perms_file:file getattr;
+allow untrusted_app_29 mnt_sdcard_file:lnk_file read;
+allow untrusted_app_29 rootfs:dir read;
+allow untrusted_app_29 seapp_contexts_file:file getattr;
+allow untrusted_app_29 self:fifo_file ioctl;
+allow untrusted_app_29 sysfs:dir read;
+allow untrusted_app_29 vendor_camera_prop:file { read open getattr };
+allow untrusted_app_29 exported_camera_prop:file { read open getattr };
+allow untrusted_app_29 vendor_file:file { read open getattr };
