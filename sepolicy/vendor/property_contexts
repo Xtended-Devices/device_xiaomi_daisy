@@ -13,6 +13,7 @@ camera.dual.mode                                              u:object_r:camera_
 persist.camera.                                               u:object_r:camera_prop:s0
 hardware.camera.autohdr                                       u:object_r:camera_prop:s0
 vendor.camera.                                                u:object_r:vendor_camera_prop:s0
+vendor.camera.aux.                    						  u:object_r:vendor_camera_prop:s0
 
 # Google camera hal read only props
 ro.vendor.camera.                                             u:object_r:camera_ro_prop:s0
