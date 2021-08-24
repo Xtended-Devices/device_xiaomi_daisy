@@ -21,11 +21,7 @@ audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
 ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=7 \
-persist.vendor.audio.fluence.speaker=true \
-persist.vendor.audio.fluence.voicecall=true \
-persist.vendor.audio.fluence.voicerec=false \
 ro.vendor.audio.sdk.ssr=false \
-ro.vendor.audio.sdk.fluencetype=fluence \
 vendor.audio.flac.sw.decoder.24bit=true \
 vendor.audio.offload.buffer.size.kb=64 \
 vendor.audio.offload.gapless.enabled=true \
@@ -46,6 +42,17 @@ vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true \
 vendor.audio.feature.kpi_optimize.enable=false
+
+# Fluence
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.audio.dualmic.config=endfire \
+persist.vendor.audio.fluence.audiorec=false \
+persist.vendor.audio.fluence.speaker=true \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicecomm=true \
+persist.vendor.audio.fluence.voicerec=false \
+ro.qc.sdk.audio.fluencetype=none \
+ro.vendor.audio.sdk.fluencetype=none
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
