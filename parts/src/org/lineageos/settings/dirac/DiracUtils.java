@@ -17,8 +17,6 @@
 package org.lineageos.settings.dirac;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.UserHandle;
 
 public final class DiracUtils {
 
