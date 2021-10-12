@@ -63,6 +63,10 @@ ro.bluetooth.hfp.ver=1.7
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.vendor.shutdown.waittime=500
 
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.sf.disable_blurs=1
+
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.kernel.ebpf.supported=true
