@@ -411,7 +411,9 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.2.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
