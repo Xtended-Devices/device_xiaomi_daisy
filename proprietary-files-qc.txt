@@ -611,8 +611,8 @@ vendor/lib64/libqmi_legacy.so|f7fe22113d12d9992b876ea59bd1aa4042cc587b
 # QTI Display - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/lib/libdisplayconfig.qti.so|af86c698dbf1c9b4cdca8cda27550210eb559b3a
 
-# Radio - from daisy V11.0.19.0.QDLMIXM
--system_ext/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
+# Radio - Telephony - from coral - google/coral/coral:12/SPB5.210812.002/7671067:user/release-keys
+-system_ext/app/datastatusnotification/datastatusnotification.apk|f33ce45ec04a67b88e9f4da52378153c77d21e77
 
 # Radio - from LA.UM.9.6.2.r1-03600-89xx.0
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
