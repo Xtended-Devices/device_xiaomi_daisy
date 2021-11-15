@@ -15,16 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-   <!-- HAL3 | HAL1 Switch button profiles -->
-    <string name="camera_title">Camera HAL Switch</string>
-    <string name="camera_pref_title">Choose a HAL</string>
-    <string name="camera_summary">Change camera HAL</string>
-    <string name="camera_hal1_summary">HAL1</string>
-    <string name="camera_hal3_summary">HAL3</string>
-
-     <!-- QS tile title -->
-    <string name="camera_qs_tile_title">Camera HAL</string>
-
     <!-- Soundcontrol settings -->
     <string name="advanced_settings">Audio Amplification</string>
     <string name="soundcontrol_summary">Optimize audio volumes</string>

@@ -27,7 +27,6 @@
 
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
-import /vendor/etc/init/hw/init.camera.rc
 import /vendor/etc/init/hw/init.soundcontrol.rc
 
 on early-init
