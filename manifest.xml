@@ -49,6 +49,7 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ICryptoFactory/clearkey</fqname>
         <fqname>@1.0::ICryptoFactory/default</fqname>
+        <fqname>@1.0::IDrmFactory/default</fqname>
         <fqname>@1.4::ICryptoFactory/clearkey</fqname>
         <fqname>@1.4::IDrmFactory/clearkey</fqname>
         <fqname>@1.2::ICryptoFactory/widevine</fqname>
