@@ -34,5 +34,5 @@ r_dir_file(hal_fingerprint_default, vfat)
 
 allow hal_fingerprint_default goodix_fp_hwservice:hwservice_manager add;
 
-allow hal_fingerprint_default default_prop:file read;
-allow hal_fingerprint_default rootfs:dir read;
+allow hal_fingerprint_default default_prop:file r_file_perms;
+allow hal_fingerprint_default rootfs:dir r_dir_perms;

@@ -13,6 +13,7 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { getattr open read };
 allow system_app wificond:binder call;
 allow system_app proc_vmallocinfo:file { open read getattr };
+allow system_app proc_pagetypeinfo:file read;
 
 # Battery Health
 allow system_app sysfs_battery_supply:dir { search };

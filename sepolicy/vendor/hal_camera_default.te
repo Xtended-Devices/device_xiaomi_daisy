@@ -8,6 +8,7 @@ allow hal_camera_default sysfs:file { read };
 allow hal_camera_default sysfs:file { open };
 allow hal_camera_default sysfs:file { getattr };
 allow hal_camera_default camera_ro_prop:file { read open getattr };
+allow hal_camera_default bootanim_system_prop:file read;
 
 set_prop(hal_camera_default, vendor_camera_prop)
 
