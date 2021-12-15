@@ -13,7 +13,7 @@ allow qti_init_shell vfat:file { open };
 allow qti_init_shell proc_dirty_ratio:file { write open };
 allow qti_init_shell qti_init_shell:capability { kill };
 allow qti_init_shell sysfs:dir { r_dir_perms setattr };
-allow qti_init_shell sysfs:file { getattr setattr };
+allow qti_init_shell sysfs:file { getattr setattr write };
 allow qti_init_shell sysfs_kgsl:file { setattr write };
 
 r_dir_file(qti_init_shell, vfat)
@@ -30,3 +30,6 @@ set_prop(qti_init_shell, ctl_start_prop)
 set_prop(qti_init_shell, ctl_stop_prop)
 set_prop(qti_init_shell, system_prop)
 dontaudit qti_init_shell self:capability { dac_override dac_read_search };
+
+allow qti_init_shell proc_page_cluster:file rw_file_perms;
+allow qti_init_shell proc_swappiness:file rw_file_perms;
