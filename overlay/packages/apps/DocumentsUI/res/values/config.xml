@@ -17,4 +17,6 @@
 <resources>
     <!-- Indicates if internal storage is shown as default or not. -->
     <bool name="config_default_show_device_root">true</bool>
+    <!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">false</bool>
 </resources>
