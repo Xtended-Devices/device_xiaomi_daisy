@@ -746,4 +746,6 @@
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
 
+    <!-- Exempt cne from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.qualcomm.qti.cne</string>
 </resources>
