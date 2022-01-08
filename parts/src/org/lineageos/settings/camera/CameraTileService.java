@@ -8,7 +8,7 @@ public class CameraTileService extends TileService {
 
     private CameraUtils mCameraUtils;
 
-    public static final String CAMERA_SYSTEM_PROPERTY = "persist.camera.profile";
+    public static final String CAMERA_SYSTEM_PROPERTY = "persist.vendor.camera.profile";
 
     @Override
     public void onStartListening() {

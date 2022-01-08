@@ -43,7 +43,7 @@ public class CameraSettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener {
 
     public static final String PREF_CAMERA = "camera_pref";
-    public static final String CAMERA_SYSTEM_PROPERTY = "persist.camera.profile";
+    public static final String CAMERA_SYSTEM_PROPERTY = "persist.vendor.camera.profile";
 
     //private TextView mTextView
     private ListPreference mCamera;
