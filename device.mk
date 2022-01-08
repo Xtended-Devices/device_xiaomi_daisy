@@ -446,6 +446,10 @@ $(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
     libjson
 
+# ConfigStore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
