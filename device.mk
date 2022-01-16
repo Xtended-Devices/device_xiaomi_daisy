@@ -420,7 +420,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
     init.daisy.rc \
-    init.soundcontrol.rc \
     init.target.rc \
     ueventd.qcom.rc
 

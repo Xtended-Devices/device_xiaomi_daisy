@@ -21,14 +21,9 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
 
-    <protected-broadcast android:name="org.lineageos.settings.CUST_UPDATE" />
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     
     <uses-sdk
@@ -61,23 +56,7 @@
         </activity>
 
         <activity
-            android:name=".soundcontrol.SoundControlSettingsActivity"
-            android:exported="false"
-            android:icon="@drawable/ic_soundcontrol"
-            android:label="@string/advanced_settings"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
-            <meta-data android:name="com.android.settings.summary"
-                       android:resource="@string/soundcontrol_summary" />
-        </activity>
-
-        <activity
             android:name=".dirac.DiracActivity"
-            android:icon="@drawable/ic_dirac"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>

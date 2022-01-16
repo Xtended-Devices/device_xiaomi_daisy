@@ -28,11 +28,6 @@ type rild_file, file_type, vendor_file_type;
 # Rmt
 type debugfs_rmt, debugfs_type, fs_type;
 
-# Sound Control
-type sysfs_hgain, sysfs_type, fs_type;
-type sysfs_mgain, sysfs_type, fs_type;
-type sysfs_sgain, sysfs_type, fs_type;
-
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 

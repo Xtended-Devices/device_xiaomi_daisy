@@ -2,13 +2,6 @@
 get_prop(system_app, camera_prop)
 set_prop(system_app, camera_prop)
 
-# Sound Control
-allow system_app {
-    sysfs_hgain
-    sysfs_mgain
-    sysfs_sgain
-}:file rw_file_perms;
-
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { getattr open read };
 allow system_app wificond:binder call;
