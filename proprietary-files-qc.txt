@@ -510,11 +510,6 @@ system_ext/lib64/libqti-perfd-client_system.so|4a7c8b57349c178b0cef6c13e638fddbb
 vendor/bin/hw/vendor.qti.hardware.perf@2.1-service|2e3be88cad2d9b9aa4edc8e68ad5f4d4e7eeaedc
 vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc|08e8a987b9011d2475c5ed0132cd422a899d8235
-vendor/etc/perf/commonresourceconfigs.xml|c8c817a41b378b5a3d76cc8240a4bec8bdc093ae
-vendor/etc/perf/perfboostsconfig.xml|4d8d54dc69391e17b59c016722e44094114acc83
-vendor/etc/perf/perfconfigstore.xml|864d62fa293686d52b14e359f09c9d106810ce60
-vendor/etc/perf/targetconfig.xml|749df363157a7078d049393a191e4b068a3ef1a0
-vendor/etc/perf/targetresourceconfigs.xml|a5374f1d45658a865e9615f4103142d96ab52a2f
 vendor/lib/libperfconfig.so|e44d84d1b38e375a6e13422a8fe21c7876fc8068
 vendor/lib/libperfgluelayer.so|39bfe9f4414537084cb6fcc30c1a95c3192583fd
 vendor/lib/libqti-perfd-client.so|59515ed57886d7c37c98c7da6314f21ff6694474
