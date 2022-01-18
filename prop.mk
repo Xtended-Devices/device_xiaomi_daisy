@@ -102,6 +102,10 @@ ro.charger.enable_suspend=true
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1
 
+# Disable blur on app launch
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.launcher.blur.appLaunch=0
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
