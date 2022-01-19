@@ -407,11 +407,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# Pixel Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
