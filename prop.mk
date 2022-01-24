@@ -74,10 +74,6 @@ sys.vendor.shutdown.waittime=500
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.sf.disable_blurs=1
 
-# BPF
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.kernel.ebpf.supported=true
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 vidc.enc.dcvs.extra-buff-count=2 \
