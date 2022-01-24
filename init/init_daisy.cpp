@@ -68,7 +68,7 @@ static void workaround_properties() {
 }
 
 std::vector<std::string> ro_props_default_source_order = {
-        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.",
+        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.", "vendor_dlkm.",
 };
 
 void set_ro_build_prop(const std::string& prop, const std::string& value) {
