@@ -389,6 +389,12 @@ on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
 
+# DSDS - Restart qcrild on data switch
+on property:persist.sys.radio.mobile_data_swap=1
+    restart vendor.qcrild
+    exec /bin/sleep 2
+    restart vendor.qcrild2
+
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
