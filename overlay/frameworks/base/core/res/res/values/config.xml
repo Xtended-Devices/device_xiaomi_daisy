@@ -743,4 +743,8 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
     </integer-array>
+
+    <!-- Whether of not wallpaper scrolling should be on or not. It may cuz lag in some low-end devices -->
+     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
 </resources>
