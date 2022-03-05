@@ -176,6 +176,10 @@ vendor.vidc.enc.disable_bframes=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
+# Wifi Display (Platform)
+PRODUCT_PROPERTY_OVERRIDES += \
+media.wfd.max_resolution=7
+
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.qti.sys.fw.bservice_enable=true
