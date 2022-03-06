@@ -295,6 +295,14 @@ vendor/lib/vendor.qti.esepowermanager@1.0.so|4182f556a9c30900231505a53afc04ec13a
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|34206c519a4ccd08545921d68db74b22ab3a0a93
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|b5b39c4f3aedc09bced70f0348980e3eccd71fca
 
+# FM Radio - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+vendor/bin/fm_qsoc_patches|d5f81777dcc71b9f4b1e66d77893b15f
+product/lib64/vendor.qti.hardware.fm@1.0.so|6ea39d64e309a7d522fde0a41dea3f7c
+system/lib64/fm_helium.so|6f0d3b609953ed93ec0070f57186b265
+system/lib64/libfm-hci.so|022cfb47a299637dbbe61d6cd6017129
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|38300e3855f27434b53d65086c4989d2
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|6ea39d64e309a7d522fde0a41dea3f7c
+
 # Gatekeeper - from sakura
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|eeb4ba9eacb57c958051a47d307968254ee081d0
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|ee4b00830aae272c4b4d4d5432d540a6d1e9ab26
