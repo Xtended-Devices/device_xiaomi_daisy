@@ -98,9 +98,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|7387026509e6667af4133
 vendor/lib64/libbtnv.so|7f1753424a5d7c51d52bd9f7ad87542abd04a1f6
 vendor/lib64/libbt-hidlclient.so|0a0d0ac4e2f4e2e80f4ec488b53c18c96ff08dc6
 
-# Bluetooth (shared dependencies) - from LA.UM.8.6.2.r1-07600-89xx.0
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671862
-
 # Bluetooth Audio - from LA.UM.8.6.2.r1-07600-89xx.0
 vendor/lib64/hw/audio.bluetooth_qti.default.so|102539a0013edf06790215b21bed68c704437a96
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|93f09e7ee848e2d6fee7f0810ad8a3e57346b72c
@@ -292,6 +289,14 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|b5b39c4f3aedc09bced70f0348980e3ec
 # Gatekeeper - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
 vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
+
+# FM Radio - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+vendor/bin/fm_qsoc_patches|d5f81777dcc71b9f4b1e66d77893b15f
+product/lib64/vendor.qti.hardware.fm@1.0.so|6ea39d64e309a7d522fde0a41dea3f7c
+system/lib64/fm_helium.so|6f0d3b609953ed93ec0070f57186b265
+system/lib64/libfm-hci.so|022cfb47a299637dbbe61d6cd6017129
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|38300e3855f27434b53d65086c4989d2
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|6ea39d64e309a7d522fde0a41dea3f7c
 
 # GPS - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/garden_app|ecc69946d5e9ecc3dbf608c81587a2eefb68daee
