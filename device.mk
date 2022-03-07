@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service \
     bootctrl.msm8953
 
+# Call recording
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
