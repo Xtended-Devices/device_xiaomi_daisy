@@ -1,3 +1,6 @@
+on boot
+    chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
+
 service vendor.fm /vendor/bin/init.qti.fm.sh
     class late_start
     user system
