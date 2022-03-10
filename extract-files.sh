@@ -15,6 +15,14 @@
 # limitations under the License.
 #
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libgf_ca.so)
+            sed -i 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
+            ;;
+    esac
+}
+
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
     return
 fi

@@ -1824,40 +1824,32 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml|3b40beb86dca
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml|83275b89ce519bc6936f69c89a0a2b5e9b423b4f
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml|0a543e6906e444ff39181807c542170dc112769e
 
-# Fingerprint - from Sakura MIUI Pie
-lib/android.hardware.biometrics.fingerprint@2.1.so|d80e596cd45d77ab506aa7837d88939387d6cd78
-lib64/android.hardware.biometrics.fingerprint@2.1.so|218efa319401f42f3278248f65f3ebaaff575334
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|2a809fedf392ee0fc44086164031dc323fdeccbe
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|28e283738952bdad16ecf107ffc9bfd4ef1e8f75
-vendor/etc/permissions/com.fingerprints.extension.xml|57b5687643d60c9494bb9ee7de3f1ecc17eb0bec
-vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
-vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
-vendor/lib64/com.fingerprints.extension@1.0.so|735b03c839422181b98c3d5ac7d8a73065a7c5c7
-vendor/lib64/hw/fingerprint.default.so|f11fae12565ba811f4bf055528c682922e41e0f9
-vendor/lib64/hw/gf_fingerprint.default.so|60dfaf2a31e3e0f9d9197c09a0a0268ed56720ff
-vendor/lib64/libgf_ca.so|e1198954c28992ca9f57bf6a09d3f629bf1bfff4
-vendor/lib64/libgf_hal.so|c31feb545b4c9d71e22c27499e05e8d3780bbc1a
-vendor/lib64/libgoodixfingerprintd_binder.so|1d5cd0cc9049d837b5771808a156e0b2df1e045d
-vendor/lib64/libsoftkeymaster.so|6437ed7a7a68733fdde95cc788a3354f4bbe664e
+# Fingerprint - from daisy V10.0.2.0.PDLMIFJ
+vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8|06df73aba535a79852c7a3168d5178a6283f57a1
+vendor/lib64/libgf_hal.so|965bcf9d994cdc29e3433fa74eefa8c512744bda
+vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
+vendor/framework/com.fingerprints.extension.jar|4d231542a253a8c56737bfef46a6494de2acaeb0
+vendor/lib64/com.fingerprints.extension@1.0.so|50160219f187fded6a571d4a5e52c299e3f3ca6b
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|0c5745649eac2b5478ef891a51b18b999bb45fce
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|78aa5520ef94120c363632c3ed3f1aefa0b5c38d
+vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|476c220ea105a01658ba1dc11c005c48cbc79679
 
-# Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Fingerprint Firmware - from daisy V10.0.2.0.PDLMIFJ
+etc/firmware/goodix_firmware.bin:vendor/etc/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
 vendor/firmware/fpctzapp.b00|9cf1d982037e7d06e0c2e2bd18df4400d51ed931
-vendor/firmware/fpctzapp.b01|3d4cd343a326b10119315fc9e02ffedf6dfd2f77
+vendor/firmware/fpctzapp.b01|a2fea6a8f0bc9c6ab945ffcd3e84ac266639b223
 vendor/firmware/fpctzapp.b02|8e1b7a4fc1b2471670269177c797c1cdd0bccdb0
 vendor/firmware/fpctzapp.b03|8114a9b779d01d718c2b0d005a104123fc14baf3
 vendor/firmware/fpctzapp.b04|35c7ffbcba00d36a644af110398e06e91e0900d8
 vendor/firmware/fpctzapp.b05|b864d3f34b9391c20c49de769f1fc0d7c8eddfe3
 vendor/firmware/fpctzapp.b06|3dfc046d861988a6632989399552fda35a562107
-vendor/firmware/fpctzapp.mdt|ca9edeba51b043fdd85b080a9389491d53bcd0d3
+vendor/firmware/fpctzapp.mdt|6ac9c2a2f8b4b64126d3d661c9dc56d5d3d756de
 vendor/firmware/goodixfp.b00|16fb45517b709dbde47e23aa0ccf8ccabd86d43e
-vendor/firmware/goodixfp.b01|e18838921e3c42e794aebab95fd5b864e3186f6f
+vendor/firmware/goodixfp.b01|ba3d32a95d638b360d270269fdb5e67509eb4ee8
 vendor/firmware/goodixfp.b02|10d3d3782c0a683aeac19482fae0e2e1793578fd
 vendor/firmware/goodixfp.b03|dac5caf1a07861298a3eb7b85e8c6c3560d7826e
 vendor/firmware/goodixfp.b04|8f41c7d3cf4484bb8cef513b71826e9269f1d610
 vendor/firmware/goodixfp.b05|cb9c666ce9653510954af7380936f5ccd3e7cc37
 vendor/firmware/goodixfp.b06|826951cf2ced420f537a17f97eec815f89f373b0
-vendor/firmware/goodixfp.mdt|4eb8e95418a3512469cc91bb8d01cecc401d42d0
+vendor/firmware/goodixfp.mdt|965c75d72b7851f4eed29b39a449b96a2849117a
