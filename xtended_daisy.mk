@@ -24,18 +24,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some prebuilts
-$(call inherit-product, vendor/custom/prebuilts/config.mk)
+# Inherit some VendorExtra stuff.
+$(call inherit-product-if-exists, vendor/ExclusivePack/config.mk)
+
+# Inherit from MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Syberia stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := syberia_daisy
+PRODUCT_NAME := xtended_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -46,5 +49,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SHIP_GCAM_GO := false
 
-#Syberia
-SYBERIA_BUILD_TYPE := OFFICIAL
+# Xtended Stuffs
+XTENDED_BUILD_MAINTAINER := TogoFire
+XTENDED_BUILD_TYPE := OFFICIAL
+XTENDED_BUILD_DONATE_URL := https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PJ3GD9AL6RPBW&source=url

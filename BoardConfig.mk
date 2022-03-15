@@ -241,3 +241,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 # Inherit from the proprietary version
 -include vendor/xiaomi/daisy/BoardConfigVendor.mk
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
+#Build
+SELINUX_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS_ON_USER := true

@@ -14,9 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_daisy.mk
+    $(LOCAL_DIR)/xtended_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_daisy-user \
-    syberia_daisy-userdebug \
-    syberia_daisy-eng
+    xtended_daisy-user \
+    xtended_daisy-userdebug \
+    xtended_daisy-eng
+
