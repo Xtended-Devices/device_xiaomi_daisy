@@ -157,9 +157,17 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/daisy
-TARGET_KERNEL_CONFIG := daisy_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
+KERNEL_LD := LD=ld.lld
+TARGET_KERNEL_CLANG_VERSION := nfs
+KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-nfs/bin/aarch64-linux-gnu-
+
+ifeq ($(KERNEL_DAISY),true)
+TARGET_KERNEL_CONFIG := daisy_defconfig
+else
+TARGET_KERNEL_CONFIG := sakura_defconfig
+endif
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
