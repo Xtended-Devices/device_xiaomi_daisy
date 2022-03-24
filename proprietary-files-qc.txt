@@ -359,6 +359,10 @@ vendor/lib/vendor.qti.gnss@2.1.so|5399112e8f8dad0ec0b9d9ce263038dc83350a67
 vendor/lib/vendor.qti.gnss@3.0.so|f3e6b0aa8d7b53ff167b623f7141e36f2d375757
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 
+# Graphics (Dependency) - from S62Pro RKQ1.210406.002
+vendor/lib/libtinyxml.so|16853d57ef82d59b48506857fc80b149ba3b3543
+vendor/lib64/libtinyxml.so|da9f11e9edc92bb6d5e8f64f4fbbaf8019b8587a
+
 # Graphics - from LA.UM.9.6.2.r1-03600-89xx.0
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|39d52eb5e311950a6b8eca35ac53758e7297e9cf
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|752de98fed59c7d161a113b62d46e20a2c939789
