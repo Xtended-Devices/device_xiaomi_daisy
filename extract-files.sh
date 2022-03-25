@@ -17,6 +17,9 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+        "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+        ;;
         etc/permissions/privapp-permissions-qti.xml)
             # MODIFY_PHONE_STATE
             sed -i 's|<permission name="android.permission.READ_PRECISE_PHONE_STATE"/>|<permission name="android.permission.MODIFY_PHONE_STATE"/>\n        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>|g' "${2}"

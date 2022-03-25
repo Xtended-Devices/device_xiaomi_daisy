@@ -12,3 +12,5 @@ vendor_restricted_prop(vendor_mwqem_prop);
 type thermal_engine_prop, vendor_property_type, property_type;
 type vendor_thermal_prop, vendor_property_type, property_type;
 
+# Fingerprint
+vendor_public_prop(vendor_fingerprint_prop);

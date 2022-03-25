@@ -1856,32 +1856,34 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml|3b40beb86dca
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml|83275b89ce519bc6936f69c89a0a2b5e9b423b4f
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml|0a543e6906e444ff39181807c542170dc112769e
 
+# Touchscreen firmware
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
+
 # Fingerprint - from daisy V10.0.2.0.PDLMIFJ
-vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8|06df73aba535a79852c7a3168d5178a6283f57a1
+vendor/lib64/libgf_ca.so|06df73aba535a79852c7a3168d5178a6283f57a1
 vendor/lib64/libgf_hal.so|965bcf9d994cdc29e3433fa74eefa8c512744bda
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|4d231542a253a8c56737bfef46a6494de2acaeb0
-vendor/lib64/com.fingerprints.extension@1.0.so|50160219f187fded6a571d4a5e52c299e3f3ca6b
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
+vendor/lib64/com.fingerprints.extension@1.0.so|e04a6ebda2ee2bd9e411599c3c91fef164e980df
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|78aa5520ef94120c363632c3ed3f1aefa0b5c38d
 vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so|476c220ea105a01658ba1dc11c005c48cbc79679
 
 # Fingerprint Firmware - from daisy V10.0.2.0.PDLMIFJ
-etc/firmware/goodix_firmware.bin:vendor/etc/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
-vendor/firmware/fpctzapp.b00|9cf1d982037e7d06e0c2e2bd18df4400d51ed931
-vendor/firmware/fpctzapp.b01|a2fea6a8f0bc9c6ab945ffcd3e84ac266639b223
-vendor/firmware/fpctzapp.b02|8e1b7a4fc1b2471670269177c797c1cdd0bccdb0
-vendor/firmware/fpctzapp.b03|8114a9b779d01d718c2b0d005a104123fc14baf3
-vendor/firmware/fpctzapp.b04|35c7ffbcba00d36a644af110398e06e91e0900d8
-vendor/firmware/fpctzapp.b05|b864d3f34b9391c20c49de769f1fc0d7c8eddfe3
-vendor/firmware/fpctzapp.b06|3dfc046d861988a6632989399552fda35a562107
-vendor/firmware/fpctzapp.mdt|6ac9c2a2f8b4b64126d3d661c9dc56d5d3d756de
-vendor/firmware/goodixfp.b00|16fb45517b709dbde47e23aa0ccf8ccabd86d43e
-vendor/firmware/goodixfp.b01|ba3d32a95d638b360d270269fdb5e67509eb4ee8
-vendor/firmware/goodixfp.b02|10d3d3782c0a683aeac19482fae0e2e1793578fd
-vendor/firmware/goodixfp.b03|dac5caf1a07861298a3eb7b85e8c6c3560d7826e
-vendor/firmware/goodixfp.b04|8f41c7d3cf4484bb8cef513b71826e9269f1d610
-vendor/firmware/goodixfp.b05|cb9c666ce9653510954af7380936f5ccd3e7cc37
-vendor/firmware/goodixfp.b06|826951cf2ced420f537a17f97eec815f89f373b0
-vendor/firmware/goodixfp.mdt|965c75d72b7851f4eed29b39a449b96a2849117a
+modem/image/fpctzapp.b00:vendor/firmware_fp/fpctzapp.b00|9cf1d982037e7d06e0c2e2bd18df4400d51ed931
+modem/image/fpctzapp.b01:vendor/firmware_fp/fpctzapp.b01|c2dff3ac8c97c20244ad47871cec31387aed7385
+modem/image/fpctzapp.b02:vendor/firmware_fp/fpctzapp.b02|8e1b7a4fc1b2471670269177c797c1cdd0bccdb0
+modem/image/fpctzapp.b03:vendor/firmware_fp/fpctzapp.b03|8114a9b779d01d718c2b0d005a104123fc14baf3
+modem/image/fpctzapp.b04:vendor/firmware_fp/fpctzapp.b04|35c7ffbcba00d36a644af110398e06e91e0900d8
+modem/image/fpctzapp.b05:vendor/firmware_fp/fpctzapp.b05|b864d3f34b9391c20c49de769f1fc0d7c8eddfe3
+modem/image/fpctzapp.b06:vendor/firmware_fp/fpctzapp.b06|3dfc046d861988a6632989399552fda35a562107
+modem/image/fpctzapp.mdt:vendor/firmware_fp/fpctzapp.mdt|d63752b75faa6e9f8d7db8add3d8f4548d077a8c
+modem/image/goodixfp.b00:vendor/firmware_fp/goodixfp.b00|16fb45517b709dbde47e23aa0ccf8ccabd86d43e
+modem/image/goodixfp.b01:vendor/firmware_fp/goodixfp.b01|012ac75e87e8e2751e428e370b921af10897dbb3
+modem/image/goodixfp.b02:vendor/firmware_fp/goodixfp.b02|10d3d3782c0a683aeac19482fae0e2e1793578fd
+modem/image/goodixfp.b03:vendor/firmware_fp/goodixfp.b03|dac5caf1a07861298a3eb7b85e8c6c3560d7826e
+modem/image/goodixfp.b04:vendor/firmware_fp/goodixfp.b04|8f41c7d3cf4484bb8cef513b71826e9269f1d610
+modem/image/goodixfp.b05:vendor/firmware_fp/goodixfp.b05|cb9c666ce9653510954af7380936f5ccd3e7cc37
+modem/image/goodixfp.b06:vendor/firmware_fp/goodixfp.b06|826951cf2ced420f537a17f97eec815f89f373b0
+modem/image/goodixfp.mdt:vendor/firmware_fp/goodixfp.mdt|55fc2b43670df033a716da7b985d6df48b2dcd2a

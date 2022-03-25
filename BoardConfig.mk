@@ -139,6 +139,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
+# Fingerprint
+SOONG_CONFIG_XIAOMI_MSM8953_BIOMETRICS_HAL_MODULES := \
+    fingerprint,fpc \
+    gf_fingerprint,goodix
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
