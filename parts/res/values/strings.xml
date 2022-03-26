@@ -18,6 +18,16 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
+   <!-- HAL3 | HAL1 Switch button profiles -->
+    <string name="camera_title">Camera HAL Switch</string>
+    <string name="camera_pref_title">Choose a HAL</string>
+    <string name="camera_summary">Change camera HAL</string>
+    <string name="camera_hal1_summary">HAL1</string>
+    <string name="camera_hal3_summary">HAL3</string>
+
+     <!-- QS tile title -->
+    <string name="camera_qs_tile_title">Camera HAL</string>
+
     <!-- Dirac settings -->
     <string name="dirac_enable">Use Mi Sound Enhancer</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
