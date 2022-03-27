@@ -89,7 +89,6 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.goog
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
 vendor.camera.aux.packageexcludelist=com.discord \
 persist.vendor.qti.telephony.vt_cam_interface=2 \
-persist.vendor.camera.dual.camera=0 \
 persist.vendor.camera.eis.enable=1 \
 persist.vendor.camera.gyro.disable=0 \
 persist.vendor.camera.isp.clock.optmz=0 \
