@@ -2,8 +2,8 @@
 <device name="Android">
     <!-- All values are in mA except as noted -->
     <item name="none">0</item>
-    <item name="screen.on">55</item>
-    <item name="screen.full">205</item>
+    <item name="screen.on.display0">55</item>
+    <item name="screen.full.display0">205</item>
     <item name="ambient.on">2</item>
     <item name="bluetooth.active">10</item>
     <item name="bluetooth.at">2</item>
