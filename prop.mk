@@ -114,7 +114,6 @@ debug.sf.hw=0 \
 debug.sf.latch_unsignaled=0 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
-debug.sf.disable_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
