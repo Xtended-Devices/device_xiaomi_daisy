@@ -472,10 +472,6 @@ PRODUCT_PACKAGES += \
     init.qti.fm.rc \
     init.qti.fm.sh
 
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Shims
 PRODUCT_PACKAGES += \
     lib-imsvt
