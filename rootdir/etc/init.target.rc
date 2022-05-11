@@ -222,6 +222,8 @@ on charger
     start vendor.hvdcp_opti
     start vendor.power_off_alarm
     start thermal-engine
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
 
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
    class main
