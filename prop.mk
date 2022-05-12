@@ -129,6 +129,10 @@ vendor.gralloc.disable_ahardware_buffer=1 \
 vendor.display.use_smooth_motion=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
+# HWUI
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.hwui.skia_atrace_enabled=false
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.dpm.feature=11 \
