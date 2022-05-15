@@ -232,17 +232,18 @@ PRODUCT_PACKAGES += \
     copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    libgralloc.system.qti\
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
-    libqdMetaData \
     libqdMetaData.system \
     libgenlock \
     libnl \
     libwfdaac \
+    memtrack.msm8953 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
