@@ -200,7 +200,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.device@3.5 \
     camera.msm8953 \
-    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
     libgui_vendor
 
