@@ -1,4 +1,4 @@
-# Copyright (c) 2012-2015, 2017-2020, The Linux Foundation. All rights reserved.
+# Copyright (c) 2012-2015, 2017-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -30,6 +30,14 @@
 # be added to search path for firmware loading
 firmware_directories /vendor/firmware_mnt/image/
 
+subsystem dma_heap
+    devname uevent_devpath
+    dirname /dev/dma_heap
+
+subsystem mem_buf_vm
+    devname uevent_devpath
+    dirname /dev/mem_buf_vm
+
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
 /dev/mhi_*_pipe_4         0660   system     system
@@ -42,6 +50,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
 /dev/membuf               0664   system     system
+/dev/mem_buf_vm/*         0660   system     system
+/dev/dma_heap/qcom,*      0444   system     system
 /dev/rtc0                 0660   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
@@ -202,6 +212,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/*.qcom,icnss/net/wlan*/queues/rx-* rps_cpus             0660   system     system
 /sys/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan*/queues/rx-* rps_cpus      0660   system     system
 /sys/devices/platform/soc/17a10040.qcom,wcn6750/net/wlan*/queues/rx-* rps_cpus    0660   system     system
+/sys/devices/platform/soc/18800000.qcom,icnss/net/wlan*/queues/rx-* rps_cpus      0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/i2c-7                0660   system     audio
 /dev/msm_camera/*         0660   system     camera
@@ -246,6 +257,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_preproc_ctl      0660   system     audio
 /dev/msm_rtac             0660   system     audio
 /dev/msm_voicememo        0660   system     audio
+/dev/aud_pasthru_adsp     0660   system     audio
+/dev/msm_audio_ion_cma    0660   system     audio
+/dev/msm_audio_ion        0660   system     audio
 /dev/ttyHSL1              0660   system     system
 /dev/ttyHS1               0660   system     system
 /dev/mdm                  0660   system     radio
@@ -341,6 +355,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # SSR devices
 /dev/subsys_*         0640   system     system
+
+# remoteproc devices
+/dev/remoteproc*      0640   system     system
 
 # Ultrasound device
 /dev/usf1                 0660   system     system
