@@ -86,7 +86,7 @@ subsystem mem_buf_vm
 #permissions for pta
 /dev/pta                  0660   system     system
 
-/dev/radio0               0644   system     system
+/dev/radio0               0666   system     system
 /dev/rfcomm0              0660   bluetooth  bluetooth
 /dev/ttyUSB0              0660   bluetooth  bluetooth
 /dev/smdcntl0             0640   radio      radio
