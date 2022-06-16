@@ -24,3 +24,6 @@ allow init sysfs_devfreq:file { open read write };
 allow init sysfs_devices_system_cpu:file { open read write };
 allow init sysfs_socinfo:file { open read write };
 allow init vendor_file:file { execute_no_trans };
+
+# Allow init to set attribute to sysfs_kprofiles
+allow init sysfs_kprofiles:file { setattr };

@@ -631,3 +631,7 @@ PRODUCT_COPY_FILES += \
 # AdGuard CA Root Certificate 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/security/cacerts/0f4ed297.0:$(TARGET_COPY_OUT_SYSTEM)/etc/security/cacerts/0f4ed297.0
+
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles

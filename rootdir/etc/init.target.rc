@@ -140,6 +140,12 @@ on boot
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
+# Allow system to manipulate KProfiles modes and parameters
+    chown system system /sys/module/kprofiles/parameters/auto_kprofiles
+    chmod 0660 /sys/module/kprofiles/parameters/auto_kprofiles
+    chown system system /sys/module/kprofiles/parameters/kp_mode
+    chmod 0660 /sys/module/kprofiles/parameters/kp_mode
+
 #USB controller configuration
     write /sys/module/g_android/parameters/mtp_tx_req_len 131072
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
