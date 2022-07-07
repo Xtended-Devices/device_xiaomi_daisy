@@ -564,7 +564,7 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_default">94.0px</dimen>
     <dimen name="status_bar_height_portrait">94.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+    <dimen name="status_bar_height_landscape">35.0dp</dimen>
 
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
