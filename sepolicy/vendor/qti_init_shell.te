@@ -33,3 +33,8 @@ dontaudit qti_init_shell self:capability { dac_override dac_read_search };
 
 allow qti_init_shell proc_page_cluster:file rw_file_perms;
 allow qti_init_shell proc_swappiness:file rw_file_perms;
+allow qti_init_shell self:socket create;
+
+allow qti_init_shell proc_boot_reason:file r_file_perms;
+allow qti_init_shell qemu_hw_prop:property_service set;
+allow qti_init_shell sysfs_leds:file create_file_perms;
