@@ -231,6 +231,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
    class main
    user root
    group system wakelock
+   disabled
 
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
