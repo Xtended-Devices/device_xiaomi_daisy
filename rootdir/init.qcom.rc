@@ -508,6 +508,13 @@ service qcom-sh /vendor/bin/init.qcom.sh
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
+on property:persist.radio.airplane_mode_on=1
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    exec /bin/sleep 2
+    start vendor.qcrild
+    start vendor.qcrild2
+
 service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
