@@ -200,6 +200,9 @@ TARGET_PER_MGR_ENABLED := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 TARGET_HAS_NO_POWER_STATS := true
 
+# Properties
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
