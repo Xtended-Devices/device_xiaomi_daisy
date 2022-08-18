@@ -108,6 +108,7 @@ ro.launcher.blur.appLaunch=0
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.disable_client_composition_cache=1 \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.hwui.renderer=opengl \
