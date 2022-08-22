@@ -39,3 +39,6 @@ ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
 
 # Subsystem state notifier
 vendor.subsys_state_notifier.		u:object_r:vendor_subsys_state_notifier_prop:s0
+
+# Wlan
+wifi.interface			                u:object_r:wifi_hal_prop:s0
