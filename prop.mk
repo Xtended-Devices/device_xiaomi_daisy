@@ -15,7 +15,8 @@ persist.sys.usb.config=mtp,adb
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed \
-dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat64.enabled=true \
+dalvik.vm.systemuicompilerfilter=speed
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
