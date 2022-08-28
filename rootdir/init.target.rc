@@ -28,6 +28,8 @@
 #
 on early-init
     write /proc/sys/kernel/sched_boost 1
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
