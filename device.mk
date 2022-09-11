@@ -499,6 +499,9 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_HOST_PACKAGES += \
     signapk
 
+# SoC
+PROCESSOR_MODEL := MSM8953
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/daisy
