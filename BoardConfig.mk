@@ -225,7 +225,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-02-05
+VENDOR_SECURITY_PATCH := 2022-09-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
