@@ -727,4 +727,11 @@
      sending a request to enable or disable the camera while the video session is also
      paused. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
+
+    <!-- List supported color modes. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+    </integer-array>
 </resources>
