@@ -1,7 +1,3 @@
--keep class org.lineageos.settings.camera.* {
-  *;
-}
-
 -keep class org.lineageos.settings.dirac.* {
   *;
 }
