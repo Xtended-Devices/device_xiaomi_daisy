@@ -165,13 +165,18 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/daisy
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
-KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_CLANG_VERSION := nfs
-KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-nfs/bin/aarch64-linux-gnu-
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_LLVM_BINUTILS := false
+TARGET_KERNEL_CLANG_VERSION := neutron
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 
-ifeq ($(KERNEL_DAISY),true)
+TARGET_BUILD_KERNEL_DAISY ?= true
+ifeq ($(strip $(TARGET_BUILD_KERNEL_DAISY)),true)
 TARGET_KERNEL_CONFIG := daisy_defconfig
-else
+endif
+
+TARGET_BUILD_KERNEL_SAKURA ?= false
+ifeq ($(strip $(TARGET_BUILD_KERNEL_SAKURA)),true)
 TARGET_KERNEL_CONFIG := sakura_defconfig
 endif
 

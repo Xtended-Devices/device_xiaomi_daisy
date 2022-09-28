@@ -248,8 +248,7 @@ persist.vendor.cne.logging.qxdm=3974
 
 # Soc
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.soc.manufacturer=QTI \
-ro.soc.model=MSM8953
+ro.soc.manufacturer=QTI
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
