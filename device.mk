@@ -121,8 +121,7 @@ PRODUCT_PACKAGES += \
 
 # ANT
 PRODUCT_PACKAGES += \
-    AntHalService \
-    libantradio
+    AntHalService
 
 # Device-specific Settings
 PRODUCT_PACKAGES += \
@@ -204,8 +203,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     vendor.qti.hardware.camera.device@1.0 \
     libdng_sdk.vendor \
-    libgui_vendor \
-    libmm-qcamera
+    libgui_vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -396,7 +394,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefright_enc_common \
@@ -498,7 +495,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
