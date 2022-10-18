@@ -17,5 +17,12 @@
     "branch"     : "x-daisy",
     "clone-depth": "1"
     
+  },
+  {
+    "repository" : "https://github.com/Dev-msm8953/vendor_qcom_opensource_fm-commonsys",
+    "target_path": "vendor/qcom/opensource/fm-commonsys",
+    "branch"     : "xt",
+    "clone-depth": "1"
+    
   }
 ]
