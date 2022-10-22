@@ -9,3 +9,9 @@ cc_library_shared {
     srcs: ["libmedia_jni_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libnetd_shim",
+    srcs: ["libnetd_shim.c"],
+    vendor: true,
+}
