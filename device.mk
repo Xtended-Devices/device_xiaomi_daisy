@@ -475,7 +475,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    lib-imsvt
+    lib-imsvt \
+    libmedia_jni_shim
 
 # RIL
 PRODUCT_PACKAGES += \

@@ -42,6 +42,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libhidlbase.so" "${2}"
             sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
             ;;
+        system/lib/libcameraservice.so)
+            "${PATCHELF}" --add-needed "libmedia_jni_shim.so" "${2}"
+            ;;
     esac
 }
 
