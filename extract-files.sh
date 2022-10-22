@@ -51,6 +51,9 @@ function blob_fixup() {
         vendor/lib64/vendor.qti.hardware.data.latency@1.0.so)
             "${PATCHELF}" --add-needed "liblatency_shim.so" "${2}"
             ;;
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --add-needed "libwvhidl_shim.so" "${2}"
+            ;;
     esac
 }
 

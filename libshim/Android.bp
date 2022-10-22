@@ -22,3 +22,8 @@ cc_library_shared {
     vendor: true,
 }
 
+cc_library_shared {
+    name: "libwvhidl_shim",
+    srcs: ["libwvhidl_shim.c"],
+    vendor: true,
+}

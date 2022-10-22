@@ -478,7 +478,8 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     libmedia_jni_shim \
     libnetd_shim \
-    liblatency_shim
+    liblatency_shim \
+    libwvhidl_shim
 
 # RIL
 PRODUCT_PACKAGES += \
