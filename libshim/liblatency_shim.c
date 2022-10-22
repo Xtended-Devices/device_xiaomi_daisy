@@ -1,0 +1,1 @@
+void _ZN6vendor3qti8hardware4data7latency4V1_022BpHwLinkLatencyService14interfaceChainENSt3__18functionIFvRKN7android8hardware8hidl_vecINS9_11hidl_stringEEEEEE() {}

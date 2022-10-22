@@ -15,3 +15,10 @@ cc_library_shared {
     srcs: ["libnetd_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "liblatency_shim",
+    srcs: ["liblatency_shim.c"],
+    vendor: true,
+}
+

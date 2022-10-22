@@ -48,6 +48,9 @@ function blob_fixup() {
         system/lib64/android.system.net.netd@1.1.so)
             "${PATCHELF}" --add-needed "libnetd_shim.so" "${2}"
             ;;
+        vendor/lib64/vendor.qti.hardware.data.latency@1.0.so)
+            "${PATCHELF}" --add-needed "liblatency_shim.so" "${2}"
+            ;;
     esac
 }
 
