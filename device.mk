@@ -240,6 +240,7 @@ PRODUCT_PACKAGES += \
     libgralloc.system.qti\
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
+    libqdMetaData \
     libqdMetaData.system \
     libgenlock \
     libnl \

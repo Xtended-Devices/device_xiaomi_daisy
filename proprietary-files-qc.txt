@@ -425,7 +425,6 @@ vendor/lib64/vendor.display.postproc@1.0.so|6ed50478f3b6c4ff6871ce715b9944c5e8a4
 
 # Graphics (shared deps) - from LA.UM.10.6.2.r1-01600-89xx.0
 system_ext/lib64/libgralloc.qti.so|8d5f08f480c121eab46bc64e3d6a8c9913a4c9f2
-system_ext/lib64/libqdMetaData.so|9092b482aa50935b9dc008b79a2ee8305869bd6c
 
 # Graphics firmware
 vendor/firmware/a506_zap.b00
