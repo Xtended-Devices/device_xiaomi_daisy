@@ -54,6 +54,9 @@ function blob_fixup() {
         vendor/lib64/libwvhidl.so)
             "${PATCHELF}" --add-needed "libwvhidl_shim.so" "${2}"
             ;;
+        vendor/lib64/vendor.qti.hardware.fm@1.0.so)
+            "${PATCHELF}" --add-needed "libfm_shim.so" "${2}"
+            ;;
     esac
 }
 

@@ -479,7 +479,8 @@ PRODUCT_PACKAGES += \
     libmedia_jni_shim \
     libnetd_shim \
     liblatency_shim \
-    libwvhidl_shim
+    libwvhidl_shim \
+    libfm_shim
 
 # RIL
 PRODUCT_PACKAGES += \

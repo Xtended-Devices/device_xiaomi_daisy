@@ -27,3 +27,9 @@ cc_library_shared {
     srcs: ["libwvhidl_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libfm_shim",
+    srcs: ["libfm_shim.c"],
+    vendor: true,
+}
