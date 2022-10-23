@@ -45,3 +45,9 @@ cc_library_shared {
     srcs: ["libcodec2_hidl_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libgadget_shim",
+    srcs: ["libgadget_shim.c"],
+    vendor: true,
+}

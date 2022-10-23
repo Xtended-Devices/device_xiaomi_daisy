@@ -63,6 +63,9 @@ function blob_fixup() {
         apex/com.android.media.swcodec/lib64/libcodec2_hidl@1.0.so)
             "${PATCHELF}" --add-needed "libcodec2_hidl_shim.so" "${2}"
             ;;
+        system/lib64/android.hardware.usb.gadget@1.0.so)
+            "${PATCHELF}" --add-needed "libgadget_shim.so" "${2}"
+            ;;
     esac
 }
 

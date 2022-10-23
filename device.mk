@@ -482,7 +482,8 @@ PRODUCT_PACKAGES += \
     libwvhidl_shim \
     libfm_shim \
     libdrm_shim \
-    libcodec2_hidl_shim
+    libcodec2_hidl_shim \
+    libgadget_shim
 
 # RIL
 PRODUCT_PACKAGES += \
