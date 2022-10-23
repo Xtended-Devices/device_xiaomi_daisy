@@ -57,6 +57,9 @@ function blob_fixup() {
         vendor/lib64/vendor.qti.hardware.fm@1.0.so)
             "${PATCHELF}" --add-needed "libfm_shim.so" "${2}"
             ;;
+        system/lib64/android.hardware.drm@1.4.so)
+            "${PATCHELF}" --add-needed "libdrm_shim.so" "${2}"
+            ;;
     esac
 }
 

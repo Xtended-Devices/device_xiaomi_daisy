@@ -33,3 +33,9 @@ cc_library_shared {
     srcs: ["libfm_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libdrm_shim",
+    srcs: ["libdrm_shim.c"],
+    vendor: true,
+}
