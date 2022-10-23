@@ -39,3 +39,9 @@ cc_library_shared {
     srcs: ["libdrm_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libcodec2_hidl_shim",
+    srcs: ["libcodec2_hidl_shim.c"],
+    vendor: true,
+}

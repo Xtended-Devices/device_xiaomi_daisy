@@ -60,6 +60,9 @@ function blob_fixup() {
         system/lib64/android.hardware.drm@1.4.so)
             "${PATCHELF}" --add-needed "libdrm_shim.so" "${2}"
             ;;
+        apex/com.android.media.swcodec/lib64/libcodec2_hidl@1.0.so)
+            "${PATCHELF}" --add-needed "libcodec2_hidl_shim.so" "${2}"
+            ;;
     esac
 }
 
