@@ -272,7 +272,10 @@ net.tcp.2g_init_rwnd=10
 
 # Usb
 PRODUCT_VENDOR_PROPERTIES += \
-persist.vendor.usb.config.extra=none
+persist.vendor.usb.config.extra=none \
+vendor.usb.rmnet.func.name=rmnet_bam \
+vendor.usb.rmnet.inst.name=rmnet \
+vendor.usb.rndis.func.name=rndis_bam
 
 # Watchdog
 PRODUCT_SYSTEM_PROPERTIES += \
