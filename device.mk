@@ -406,7 +406,8 @@ PRODUCT_PACKAGES += \
     libstagefright_enc_common \
     libstagefright_omx.vendor \
     libstagefright_softomx \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_foundation
 
 # Perf
 PRODUCT_COPY_FILES += \
