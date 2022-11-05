@@ -82,7 +82,6 @@ media.camera.ts.monotonic=1 \
 persist.vendor.camera.display.lmax=1280x720 \
 persist.vendor.camera.display.umax=1920x1080 \
 vendor.camera.lowpower.record.enable=1 \
-vendor.camera.aux.packageexcludelist=com.discord \
 persist.vendor.qti.telephony.vt_cam_interface=2 \
 persist.vendor.camera.eis.enable=1 \
 persist.vendor.camera.gyro.disable=0 \
