@@ -284,3 +284,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.com.google.ime.corner_key_r=35 \
 ro.com.google.ime.kb_pad_port_b=1
 
+# Logs
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.log.tag.BoundBrokerSvc=S \
+persist.log.tag.GoogleInputMethodService=S \
+persist.log.tag.QC-time-services=S \
+persist.log.tag.Tethering=S \
+persist.log.tag.WindowManager=S \
+persist.log.tag.ziparchive=S
