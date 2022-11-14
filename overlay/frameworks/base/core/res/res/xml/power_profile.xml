@@ -32,15 +32,6 @@
         <value>2016000</value>
         <value>2208000</value>
     </array>
-    <array name="cpu.core_power.cluster0">
-        <value>21</value>
-        <value>28</value>
-        <value>39</value>
-        <value>50</value>
-        <value>58</value>
-        <value>62</value>
-        <value>74</value> 
-    </array> 
     <item name="cpu.active">8.4</item>
     <item name="cpu.awake">1.6</item>
     <item name="cpu.idle">1.1</item>
