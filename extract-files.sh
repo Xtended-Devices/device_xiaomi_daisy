@@ -45,6 +45,9 @@ function blob_fixup() {
         system/lib/libcameraservice.so)
             "${PATCHELF}" --add-needed "libmedia_jni_shim.so" "${2}"
             ;;
+        system/lib64/libcameraservice.so)
+            "${PATCHELF}" --add-needed "libcameraservice_shim.so" "${2}"
+            ;;
         system/lib64/android.system.net.netd@1.1.so)
             "${PATCHELF}" --add-needed "libnetd_shim.so" "${2}"
             ;;

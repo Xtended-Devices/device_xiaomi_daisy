@@ -51,3 +51,9 @@ cc_library_shared {
     srcs: ["libgadget_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libcameraservice_shim",
+    srcs: ["libcameraservice_shim.c"],
+    vendor: true,
+}
