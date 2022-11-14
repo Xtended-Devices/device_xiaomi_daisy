@@ -22,7 +22,7 @@
         <value>3</value>
         <value>2</value>
     </array>
-    <array name="cpu.core_speeds.cluster0">
+    <array name="cpu.speeds">
         <value>652800</value>
         <value>1036800</value>
         <value>1401600</value>
@@ -32,9 +32,17 @@
         <value>2016000</value>
         <value>2208000</value>
     </array>
-    <item name="cpu.active">8.4</item>
-    <item name="cpu.idle">1.1</item>
-    <item name="cpu.suspend">1.6</item>
+    <array name="cpu.active">
+        <value>13</value>
+        <value>23</value>
+        <value>33</value>
+        <value>44</value>
+        <value>55</value>
+        <value>68</value>
+        <value>76</value>
+    </array>
+    <item name="cpu.idle">4</item>
+    <item name="cpu.suspend">3</item>
     <item name="battery.capacity">4000</item>
     <item name="bluetooth.controller.voltage">3300</item>
 </device>
