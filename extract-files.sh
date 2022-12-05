@@ -69,6 +69,12 @@ function blob_fixup() {
         system/lib64/android.hardware.usb.gadget@1.0.so)
             "${PATCHELF}" --add-needed "libgadget_shim.so" "${2}"
             ;;
+        vendor/etc/init/qcrild.rc)
+            sed -i '4d;11d' "${2}"
+            ;;
+        vendor/etc/init/dataqti.rc)
+            sed -i '19d' "${2}"
+            ;;
     esac
 }
 
