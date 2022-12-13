@@ -260,10 +260,6 @@ persist.vendor.cne.logging.qxdm=3974
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.soc.manufacturer=QTI
 
-# SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true
-
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
