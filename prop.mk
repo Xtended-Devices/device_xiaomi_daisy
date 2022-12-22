@@ -192,7 +192,8 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.extension_library=libqti-perfd-client.so \
+ro.vendor.perf.scroll_opt=true
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
