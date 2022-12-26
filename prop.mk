@@ -3,7 +3,7 @@
 #
 
 # ADB on boot
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.adb.secure=0 \
 ro.secure=0 \
 ro.debuggable=1 \
@@ -12,14 +12,14 @@ persist.service.debuggable=1 \
 persist.sys.usb.config=mtp,adb
 
 # ART
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed \
 dalvik.vm.dex2oat64.enabled=true \
 dalvik.vm.systemuicompilerfilter=speed
 
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 af.fast_track_multiplier=2 \
 audio.deep_buffer.media=true \
 audio.offload.disable=true \
@@ -52,7 +52,7 @@ vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true
 
 # Fluence
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.audio.dualmic.config=endfire \
 persist.vendor.audio.fluence.audiorec=false \
 persist.vendor.audio.fluence.speaker=true \
@@ -63,20 +63,20 @@ ro.qc.sdk.audio.fluencetype=none \
 ro.vendor.audio.sdk.fluencetype=none
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
 
 # Boot
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 sys.vendor.shutdown.waittime=500
 
 # Blur
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
 persist.sys.sf.disable_blurs=1
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 vidc.enc.dcvs.extra-buff-count=2 \
 media.camera.ts.monotonic=1 \
 persist.vendor.camera.display.lmax=1280x720 \
@@ -96,15 +96,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
 ro.charger.enable_suspend=true
 
 # Cne
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.cne.feature=1
 
 # Disable blur on app launch
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
 ro.launcher.blur.appLaunch=0
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 debug.sf.predict_hwc_composition_strategy=0 \
 debug.sf.disable_client_composition_cache=1 \
 debug.mdpcomp.logs=0 \
@@ -124,11 +124,11 @@ vendor.gralloc.disable_ahardware_buffer=1 \
 vendor.display.use_smooth_motion=1
 
 # HWUI
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 debug.hwui.skia_atrace_enabled=false
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
 persist.vendor.dpm.feature=11 \
 persist.vendor.dpm.loglevel=0 \
 persist.vendor.dpm.nsrm.bkg.evt=3955 \
@@ -136,11 +136,11 @@ persist.vendor.dpmhalservice.enable=1 \
 persist.vendor.mwqem.enable=1
 
 # DRM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 drm.service.enabled=true
 
 # Enable QC2 bufferqueue block-pool
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 vendor.qc2.use.bqpool=1
 
 # Fast mass storage
@@ -152,30 +152,30 @@ PRODUCT_VENDOR_PROPERTIES += \
 persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.qfp=false
 
 # Fm
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 ro.fm.transmitter=false
 
 # Frp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # GPS
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 ro.ril.def.agps.mode=1
 
 # IMS Debugging
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.ims.disableADBLogs=1 \
 persist.vendor.ims.disableDebugLogs=1 \
 persist.vendor.ims.disableIMSLogs=1 \
 persist.vendor.ims.disableQXDMLogs=1
 
 # Media
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 av.debug.disable.pers.cache=1 \
 debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
@@ -194,11 +194,11 @@ vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1
 
 # Wifi Display (Platform)
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 media.wfd.max_resolution=7
 
 # Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Disable media transcoding
@@ -211,18 +211,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 vendor.mm.enable.qcom_parser=301715
 
 # Perf
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.perf.scroll_opt=true
 
 # Netmgrd
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
 persist.vendor.data.mode=concurrent
 
 # Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.rild.nitz_plmn="" \
 persist.rild.nitz_long_ons_0="" \
 persist.rild.nitz_long_ons_1="" \
@@ -234,7 +234,7 @@ persist.rild.nitz_short_ons_2="" \
 persist.rild.nitz_short_ons_3=""
 
 # Radio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 DEVICE_PROVISIONED=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
@@ -267,40 +267,40 @@ persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
 # Soc
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.soc.manufacturer=QTI
 
 # System
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 persist.sys.binary_xml=false
 
 # Time Services
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.delta_time.enable=true
 
 # Tcp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 net.tcp.2g_init_rwnd=10
 
 # Usb
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.usb.config.extra=none
 
 # Watchdog
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 ro.hw_timeout_multiplier=3
 
 # Wifi
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 wifi.interface=wlan0
 
 # Gboard
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.com.google.ime.corner_key_r=35 \
 ro.com.google.ime.kb_pad_port_b=1
 
 # Logs
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.log.tag.BoundBrokerSvc=S \
 persist.log.tag.GoogleInputMethodService=S \
 persist.log.tag.QC-time-services=S \
