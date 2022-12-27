@@ -198,9 +198,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 persist.sys.fuse.transcode_user_control=true \
 persist.sys.fuse.transcode_enabled=false
 
-# Codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE
+# Codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF DTS FLV 3GP 3G2 MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE
 PRODUCT_VENDOR_PROPERTIES += \
-vendor.mm.enable.qcom_parser=1048543
+vendor.mm.enable.qcom_parser=1047519
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
