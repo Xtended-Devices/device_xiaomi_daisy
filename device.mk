@@ -265,8 +265,8 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    RevampedFMRadio \
+    libqcomfmjni:64
 
 # Framework detect
 PRODUCT_PACKAGES += \
