@@ -265,9 +265,8 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+    FMRadio \
+    libfmjni
 
 # Framework detect
 PRODUCT_PACKAGES += \
@@ -470,10 +469,6 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     removepackages
-
-PRODUCT_PACKAGES += \
-    init.qti.fm.rc \
-    init.qti.fm.sh
 
 # Shims
 PRODUCT_PACKAGES += \
