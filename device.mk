@@ -481,7 +481,8 @@ PRODUCT_PACKAGES += \
     libdrm_shim \
     libcodec2_hidl_shim \
     libgadget_shim \
-    libcameraservice_shim
+    libcameraservice_shim \
+    libc++_shim
 
 # RIL
 PRODUCT_PACKAGES += \

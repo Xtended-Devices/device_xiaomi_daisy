@@ -72,6 +72,9 @@ function blob_fixup() {
         vendor/etc/init/dataqti.rc)
             sed -i '19d' "${2}"
             ;;
+        system/lib64/libc++.so)
+            "${PATCHELF}" --add-needed "libc++_shim.so" "${2}"
+            ;;
     esac
 }
 
