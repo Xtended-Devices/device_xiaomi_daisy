@@ -113,7 +113,6 @@ debug.sf.disable_client_composition_cache=1 \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.hwui.renderer=opengl \
-debug.hwui.use_buffer_age=false \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
