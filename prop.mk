@@ -110,18 +110,12 @@ ro.launcher.blur.appLaunch=0
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.disable_client_composition_cache=1 \
-debug.egl.hw=0 \
-debug.enable.sglscale=1 \
 debug.hwui.renderer=opengl \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.hw=0 \
 debug.sf.latch_unsignaled=0 \
-debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
-dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
-persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
@@ -131,8 +125,7 @@ ro.vendor.display.cabl=2 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.disable_ahardware_buffer=1 \
-vendor.display.use_smooth_motion=1 \
-vendor.gralloc.enable_fb_ubwc=1
+vendor.display.use_smooth_motion=1
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -188,7 +181,6 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
 # Wifi Display (Platform)
