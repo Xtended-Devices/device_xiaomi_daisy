@@ -65,8 +65,7 @@ ro.vendor.audio.sdk.fluencetype=none
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 qcom.bluetooth.soc=smd \
-ro.bluetooth.hfp.ver=1.7 \
-vendor.qcom.bluetooth.soc=pronto
+ro.bluetooth.hfp.ver=1.7
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \

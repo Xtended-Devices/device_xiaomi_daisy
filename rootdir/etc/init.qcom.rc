@@ -366,9 +366,6 @@ on property:ro.vendor.iocgrp.config=1
     write /dev/blkio/blkio.weight 1000
     write /dev/blkio/bg/blkio.weight 100
 
-on property:vendor.hw.fm.init=*
-    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${vendor.hw.fm.init}
-
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Enable UFS clock scaling back
