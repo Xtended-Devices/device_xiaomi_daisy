@@ -1,4 +1,5 @@
-allow platform_app sysfs_kgsl:dir search;
+allow platform_app sysfs_kgsl:dir { search };
+allow platform_app default_android_service:service_manager { find };
 
 #allow platform_app to read vendor_camera_prop
 get_prop(platform_app, vendor_persist_camera_prop)
@@ -17,3 +18,5 @@ allow platform_app sysfs_graphics:file { read open getattr };
 allow platform_app sysfs_batteryinfo:dir { search };
 allow platform_app sysfs_graphics:dir search;
 allow platform_app app_data_file:file execute;
+
+allow platform_app mnt_pass_through_file:dir { search };

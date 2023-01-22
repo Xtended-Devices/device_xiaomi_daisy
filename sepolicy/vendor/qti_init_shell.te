@@ -38,3 +38,9 @@ allow qti_init_shell self:socket create;
 allow qti_init_shell proc_boot_reason:file r_file_perms;
 allow qti_init_shell qemu_hw_prop:property_service set;
 allow qti_init_shell sysfs_leds:file create_file_perms;
+
+allow qti_init_shell configfs:dir { write };
+allow qti_init_shell configfs:dir { add_name };
+allow qti_init_shell configfs:dir { create };
+allow qti_init_shell configfs:file { create };
+allow qti_init_shell configfs:lnk_file { create };

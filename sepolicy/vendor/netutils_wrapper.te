@@ -1,2 +1,4 @@
 # disable logspam
 dontaudit netutils_wrapper self:capability sys_admin;
+allow netutils_wrapper system_file:dir { add_name };
+allow netutils_wrapper system_file:file { create };
