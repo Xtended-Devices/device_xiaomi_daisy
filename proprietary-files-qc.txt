@@ -61,6 +61,7 @@ vendor/lib/soundfx/libaudiopreprocessing.so|948f18c576254144f48e9051be28e7d23f85
 vendor/lib/soundfx/libqcbassboost.so|a95549c66ebd8482b88b2018a577a5d8938618c2
 vendor/lib/soundfx/libqcreverb.so|db5a719488b70814a89e740eef6ae66df5ec95c9
 vendor/lib/soundfx/libqcvirt.so|08827068e632ed410a5dd6698d77450dc25b3657
+vendor/lib/soundfx/libasphere.so|47c11c1f35c4f84c55eb154257f49f97d5b445e8
 vendor/lib64/libacdb-fts.so|ae8275322050d1bd5cebf2cee15864fcf3c87fdf
 vendor/lib64/libacdbloader.so|39a24dfed0d8d6aaa41fd924b373fd226c944538
 vendor/lib64/libacdbrtac.so|547a42e2ed54d13e780fab26134ec0fd90054d4c
@@ -76,6 +77,7 @@ vendor/lib64/libtinycompress_vendor.so|74909f72ee8ebb01c2f4ef717e902055272a5917
 vendor/lib64/soundfx/libaudiopreprocessing.so|28e2f7f8ab01a6cc8bc60a278e93704755121f49
 vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
 vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
+vendor/lib64/soundfx/libasphere.so|9bbef4a17304a19bd71cd52612257e7acbcb6ab7
 
 # Audio Hardware - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
 vendor/lib/hw/audio.primary.default.so|ff14977e58b75175644acdc1e94215eeb9808f0b
