@@ -861,4 +861,7 @@
         <item>com.discord</item>
     </string-array>
 
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">false</bool>
+
 </resources>
