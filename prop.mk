@@ -147,6 +147,10 @@ vendor.qc2.use.bqpool=1
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.vold.umsdirtyratio=50
 
+# Feature flags
+PRODUCT_VENDOR_PROPERTIES += \
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
