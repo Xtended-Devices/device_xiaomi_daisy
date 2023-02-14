@@ -143,6 +143,10 @@ drm.service.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qc2.use.bqpool=1
 
+# Fast mass storage
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.vold.umsdirtyratio=50
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
