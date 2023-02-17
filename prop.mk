@@ -194,6 +194,11 @@ media.wfd.max_resolution=7
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Disable media transcoding
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.sys.fuse.transcode_user_control=true \
+persist.sys.fuse.transcode_enabled=false
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.extension_library=libqti-perfd-client.so \
