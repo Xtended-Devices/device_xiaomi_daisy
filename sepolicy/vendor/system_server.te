@@ -7,7 +7,7 @@ r_dir_file(system_server, vendor_idc_file);
 r_dir_file(system_server, vendor_keylayout_file);
 
 allow system_server sysfs_rtc:file r_file_perms;
-allow system_server app_zygote:process getpgid;
+allow system_server app_zygote:process { getpgid };
 allow system_server default_android_service:service_manager { add };
 
 # camera
