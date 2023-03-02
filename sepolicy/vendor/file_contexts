@@ -35,6 +35,9 @@
 /data/gf_data(/.*)?                                                                                        u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			                                                           u:object_r:gx_fpd_data_file:s0
 
+# Executables
+/(vendor|system/vendor)/bin/subsystem_state_notifier		u:object_r:subsystem_state_notifier_exec:s0
+
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_msm8953     u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.widevine                               u:object_r:hal_drm_widevine_exec:s0
@@ -59,6 +62,9 @@
 
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril\.db			                                   u:object_r:rild_file:s0
+
+# Subsystems
+/sys/devices(/platform)?/soc/4080000\.qcom,mss/subsys[0-9]/state	u:object_r:sysfs_modem_subsys:s0
 
 # Sys files
 /sys/devices(/platform)?/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?		                           u:object_r:sysfs_leds:s0

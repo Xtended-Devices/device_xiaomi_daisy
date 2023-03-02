@@ -14,3 +14,6 @@ type vendor_thermal_prop, vendor_property_type, property_type;
 
 # Fingerprint
 vendor_public_prop(vendor_fingerprint_prop);
+
+# Subsystem state notifier
+vendor_internal_prop(vendor_subsys_state_notifier_prop);

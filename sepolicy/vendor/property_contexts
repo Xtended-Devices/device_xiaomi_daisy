@@ -39,3 +39,6 @@ persist.audio.dirac.                                          u:object_r:dirac_p
 # Radio
 ro.vendor.ril.svlte1x                   u:object_r:vendor_radio_prop:s0
 ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
+
+# Subsystem state notifier
+vendor.subsys_state_notifier.		u:object_r:vendor_subsys_state_notifier_prop:s0

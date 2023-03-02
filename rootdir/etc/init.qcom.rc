@@ -188,11 +188,18 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-    # Enable qcrild and data services
-    enable vendor.qcrild
-    enable vendor.qcrild2
+    # Enable data services
     enable vendor.dataqti
     enable vendor.dataadpl
+
+# Qcrild
+on property:vendor.subsys_state_notifier.modem.state=OFFLINE
+    stop vendor.qcrild
+    stop vendor.qcrild2
+
+on property:vendor.subsys_state_notifier.modem.state=ONLINE
+    start vendor.qcrild
+    start vendor.qcrild2
 
 # msm specific files that need to be created on /data
 on post-fs-data

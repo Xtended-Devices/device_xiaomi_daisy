@@ -26,3 +26,6 @@ allow vendor_init vendor_fingerprint_prop:file r_file_perms;
 # Allow vendor_init to set vendor_camera_prop
 set_prop(vendor_init, vendor_camera_prop)
 get_prop(vendor_init, vendor_camera_prop)
+
+# Subsystem state notifier
+get_prop(vendor_init, vendor_subsys_state_notifier_prop)
