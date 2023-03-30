@@ -278,7 +278,7 @@ vendor.usb.rndis.func.name=rndis_bam
 
 # Watchdog
 PRODUCT_SYSTEM_PROPERTIES += \
-ro.hw_timeout_multiplier=3
+ro.hw_timeout_multiplier=6
 
 # Wifi
 PRODUCT_VENDOR_PROPERTIES += \
