@@ -48,6 +48,17 @@ on init
     write /sys/kernel/icnss/wpss_boot 1
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+# HID gadget device nodes
+service hidg0 /system/bin/sh -c "mknod --mode=666 /dev/hidg0 c 240 0"
+    class core
+    user root
+    group root
+
+service hidg1 /system/bin/sh -c "mknod --mode=666 /dev/hidg1 c 240 1"
+    class core
+    user root
+    group root
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
