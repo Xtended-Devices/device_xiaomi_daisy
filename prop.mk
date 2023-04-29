@@ -285,6 +285,13 @@ ro.hw_timeout_multiplier=6
 PRODUCT_VENDOR_PROPERTIES += \
 wifi.interface=wlan0
 
+# Google Photos
+PRODUCT_VENDOR_PROPERTIES += \
+debug.photos.eraser_camo=1 \
+debug.photos.eraser_suggestion=1 \
+debug.photos.force_pixel_eol=1 \
+debug.photos.p_editr.eraser=1
+
 # Gboard
 PRODUCT_VENDOR_PROPERTIES += \
 ro.com.google.ime.corner_key_r=35 \
