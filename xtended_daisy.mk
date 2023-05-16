@@ -39,6 +39,17 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Inherit from PixelLauncherExtended
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := glance22
+ENABLE_LOCAL_COLOR_POPUPS := true
+ENABLE_OVERVIEW_SELECTIONS := true
+ENABLE_OVERVIEW_SHARING_TO_PEOPLE := true
+ENABLE_QUICKSTEP_LIVE_TILE := true
+ENABLE_REGION_SAMPLING := true
+ENABLE_SMARTSPACE_DISMISS := true
+QUICK_WALLPAPER_PICKER := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
 PRODUCT_NAME := xtended_daisy
