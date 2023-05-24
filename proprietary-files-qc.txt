@@ -933,3 +933,6 @@ vendor/lib/libwfdmmservice.so|ccdf23feee6f25493297cab321003a2b11177027
 vendor/lib/libwfdmodulehdcpsession.so|0a6c514bb4436afae023801cf0bd4f07d0d0b6b7
 vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 vendor/lib64/libwfdhdcpcp.so|1a3384745b7ec87cda5ff58a43872b1374f6fc9b
+
+# Screenshot Tile
+-system_ext/priv-app/ScreenshotTile/ScreenshotTile.apk|c9a16d75d162a7b25157a6a9d2c6b125787b3861
