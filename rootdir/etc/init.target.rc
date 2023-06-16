@@ -164,7 +164,6 @@ on boot
     # DT2W Node
     chown system system /proc/touchpanel/wakeup_gesture
     chmod 0660 /proc/touchpanel/wakeup_gesture
-    write /proc/touchpanel/wakeup_gesture 1 
 
 on property:sys.boot_completed=1
     # Restrict permissions to socket file
