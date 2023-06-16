@@ -86,9 +86,7 @@ vendor/lib64/hw/audio.primary.default.so|21c56b5ff57681e1068de79520e1e3e542392e8
 vendor/lib64/hw/audio.primary.msm8953.so|93a15cfc441bc13df66a5557add4d2ba803b2b96
 
 # Audio dirac - from xiaomi
-lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 
 # ANT+ (vendor) - from LA.UM.9.6.2.r1-03600-89xx.0

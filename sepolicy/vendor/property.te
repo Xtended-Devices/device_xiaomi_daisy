@@ -2,9 +2,6 @@
 type camera_ro_prop, vendor_property_type, property_type;
 type vendor_camera_prop, vendor_property_type, property_type;
 
-# Dirac
-type dirac_prop, vendor_property_type, property_type;
-
 #mwqem property
 vendor_restricted_prop(vendor_mwqem_prop);
 
