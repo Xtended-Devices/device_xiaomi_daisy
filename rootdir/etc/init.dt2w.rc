@@ -1,0 +1,17 @@
+# Initialization
+on property:sys.boot_completed=1
+
+# Set default profile on first boot
+    exec u:r:init:s0 root root -- /vendor/bin/init.dt2w.sh
+    exec u:r:magisk:s0 root root -- /vendor/bin/init.dt2w.sh
+
+# Enable DT2W support
+   setprop dt2w.support 1
+
+# 0 - Disable DT2W
+on property:persist.vendor.dt2w.profile=0
+    write /proc/touchpanel/wakeup_gesture 0
+
+# 1 - Enable DT2W
+on property:persist.vendor.dt2w.profile=1
+    write /proc/touchpanel/wakeup_gesture 1

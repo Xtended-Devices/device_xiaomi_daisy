@@ -14,18 +14,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Ambient settings -->
-    <string name="ambient_enable">Use ambient display</string>
-
-   <!-- DT2W Switch button profiles -->
-    <string name="dt2w_title">DT2W Switch</string>
-    <string name="dt2w_pref_title">Toggle Double Tap</string>
-    <string name="dt2w_summary">Change DT2W</string>
-    <string name="dt2w_disable_summary">DT2W OFF</string>
-    <string name="dt2w_enable_summary">DT2W ON</string>
-
-     <!-- QS tile title -->
-    <string name="dt2w_qs_tile_title">DT2W</string>
-
+<resources>
+    <!-- DT2W Switch button profiles -->
+    <string-array name="dt2w_entries">
+        <item>@string/dt2w_disable_summary</item>
+        <item>@string/dt2w_enable_summary</item>
+    </string-array>
+    <string-array name="dt2w_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>

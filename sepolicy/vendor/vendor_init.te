@@ -29,3 +29,5 @@ get_prop(vendor_init, vendor_camera_prop)
 
 # Subsystem state notifier
 get_prop(vendor_init, vendor_subsys_state_notifier_prop)
+
+allow vendor_init init_service_status_prop:property_service { set };

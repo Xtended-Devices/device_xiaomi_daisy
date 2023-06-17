@@ -55,5 +55,15 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".dt2w.Dt2wTileService"
+            android:icon="@drawable/ic_dt2w_qs"
+            android:label="@string/dt2w_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
     </application>
 </manifest>

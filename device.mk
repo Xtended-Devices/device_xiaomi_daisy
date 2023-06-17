@@ -450,6 +450,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.dt2w.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
@@ -459,6 +460,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
+    init.dt2w.sh \
     init.class_main.sh \
     init.goodix.sh \
     init.qcom.early_boot.sh \
